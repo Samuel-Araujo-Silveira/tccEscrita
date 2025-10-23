@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.23)  23 OCT 2025 15:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.23)  23 OCT 2025 17:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2452,9 +2452,13 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 \openout4 = `tcc-ifbaiano.mw'.
 
  (./tex/justificativa.tex
+
+LaTeX Warning: Citation `teixeira2014trajetoria' on page 14 undefined on input 
+line 2.
+
 \openout4 = `tcc-ifbaiano.mw'.
 
- [14
+[14
 
 ] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
@@ -2462,19 +2466,18 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 \openout4 = `tcc-ifbaiano.mw'.
 
-
-[15] (./tcc-ifbaiano.mw)
+ [15] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
- (./tex/revisao-bibliografica-teorica.tex
+
+(./tex/revisao-bibliografica-teorica.tex
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <17.28> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 6.
 \openout4 = `tcc-ifbaiano.mw'.
 
  [16
 
-]
-(./tcc-ifbaiano.mw)
+] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
@@ -2486,7 +2489,8 @@ Package pdftex.def Info: images/oocitos.png  used on input line 34.
 (pdftex.def)             Requested size: 273.00278pt x 272.99265pt.
 \openout4 = `tcc-ifbaiano.mw'.
 
- [17] (./tcc-ifbaiano.mw)
+ [17]
+(./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
 <images/oocito/figura2.png, id=366, 813.0375pt x 813.0375pt>
@@ -2496,8 +2500,7 @@ Package pdftex.def Info: images/oocito/figura2.png  used on input line 47.
 (pdftex.def)             Requested size: 273.00278pt x 272.99265pt.
 \openout4 = `tcc-ifbaiano.mw'.
 
- [18 <./images/oocitos.png>]
-(./tcc-ifbaiano.mw)
+ [18 <./images/oocitos.png>] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
 <images/oocito/figura3.png, id=376, 813.0375pt x 813.0375pt>
@@ -2517,8 +2520,8 @@ Package pdftex.def Info: images/oocito/figura04.png  used on input line 69.
 (pdftex.def)             Requested size: 273.00278pt x 272.99265pt.
 \openout4 = `tcc-ifbaiano.mw'.
 
-
-[20 <./images/oocito/figura3.png>] (./tcc-ifbaiano.mw)
+ [20 <./images/oocito/figura3.png>]
+(./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
 <images/oocito/figura5.png, id=394, 813.0375pt x 813.0375pt>
@@ -2533,8 +2536,8 @@ Package pdftex.def Info: images/oocito/figura5.png  used on input line 80.
 
 \openout4 = `tcc-ifbaiano.mw'.
 
- [22 <./images/oocito/figura5.png>]
-(./tcc-ifbaiano.mw)
+
+[22 <./images/oocito/figura5.png>] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
 \openout4 = `tcc-ifbaiano.mw'.
@@ -2544,7 +2547,7 @@ Package pdftex.def Info: images/oocito/figura5.png  used on input line 80.
 
 \openout4 = `tcc-ifbaiano.mw'.
 
- [24] (./tcc-ifbaiano.mw)
+[24] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
 \openout4 = `tcc-ifbaiano.mw'.
@@ -2553,8 +2556,7 @@ Package pdftex.def Info: images/oocito/figura5.png  used on input line 80.
 
 \openout4 = `tcc-ifbaiano.mw'.
 
- [25]
-(./tcc-ifbaiano.mw)
+ [25] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
 \openout4 = `tcc-ifbaiano.mw'.
@@ -2586,8 +2588,7 @@ Package pdftex.def Info: images/ia/rnc.png  used on input line 203.
 (pdftex.def)             Requested size: 409.49722pt x 130.46295pt.
 \openout4 = `tcc-ifbaiano.mw'.
 
- [27]
-(./tcc-ifbaiano.mw)
+ [27] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
 <images/ia/segmenta.png, id=532, 594.22pt x 468.75125pt>
@@ -2597,7 +2598,8 @@ Package pdftex.def Info: images/ia/segmenta.png  used on input line 230.
 (pdftex.def)             Requested size: 409.49722pt x 323.0453pt.
 \openout4 = `tcc-ifbaiano.mw'.
 
- [28 <./images/ia/rnc.png>] (./tcc-ifbaiano.mw)
+ [28 <./images/ia/rnc.png>]
+(./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
 \openout4 = `tcc-ifbaiano.mw'.
@@ -2608,11 +2610,11 @@ Package pdftex.def Info: images/ia/segmenta.png  used on input line 230.
 )
 \openout4 = `tcc-ifbaiano.mw'.
 
- [30] (./tcc-ifbaiano.mw)
+
+[30] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
-
-(./tex/metodologia.tex
+ (./tex/metodologia.tex
 <images/ia/processo3.png, id=560, 1445.4pt x 813.0375pt>
 File: images/ia/processo3.png Graphic file (type png)
 <use images/ia/processo3.png>
@@ -2622,8 +2624,7 @@ Package pdftex.def Info: images/ia/processo3.png  used on input line 13.
 
  [31
 
- <./images/ia/processo3.png (PNG copy)>]
-(./tcc-ifbaiano.mw)
+ <./images/ia/processo3.png (PNG copy)>] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
 <images/ferramentas/lupa.png, id=568, 383.93437pt x 467.49657pt>
@@ -2633,13 +2634,13 @@ Package pdftex.def Info: images/ferramentas/lupa.png  used on input line 27.
 (pdftex.def)             Requested size: 364.00139pt x 443.25607pt.
 \openout4 = `tcc-ifbaiano.mw'.
 
- [32 <./images/ferramentas/lupa.png>] (./tcc-ifbaiano.mw)
+ [32 <./images/ferramentas/lupa.png>]
+(./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
 \openout4 = `tcc-ifbaiano.mw'.
 
-
-[33] (./tcc-ifbaiano.mw)
+ [33] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
 <images/ia/imagempre.png, id=610, 767.86874pt x 763.85374pt>
@@ -2654,13 +2655,13 @@ Package pdftex.def Info: images/ia/arquitetura.png  used on input line 78.
 (pdftex.def)             Requested size: 364.00139pt x 203.16476pt.
 \openout4 = `tcc-ifbaiano.mw'.
 
- [34 <./images/ia/imagempre.png (PNG copy)>]
+ [34 <./images/ia/imagempre.png (PNG copy)>] (./tcc-ifbaiano.mw)
+\openout4 = `tcc-ifbaiano.mw'.
+
+\openout4 = `tcc-ifbaiano.mw'.
+
+ [35 <./images/ia/arquitetura.png>]
 (./tcc-ifbaiano.mw)
-\openout4 = `tcc-ifbaiano.mw'.
-
-\openout4 = `tcc-ifbaiano.mw'.
-
- [35 <./images/ia/arquitetura.png>] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
 <images/ia/saida2.png, id=638, 1445.4pt x 813.0375pt>
@@ -2670,8 +2671,7 @@ Package pdftex.def Info: images/ia/saida2.png  used on input line 115.
 (pdftex.def)             Requested size: 364.00139pt x 204.74759pt.
 \openout4 = `tcc-ifbaiano.mw'.
 
-
-[36] (./tcc-ifbaiano.mw)
+ [36] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
 \openout4 = `tcc-ifbaiano.mw'.
@@ -2723,6 +2723,17 @@ Package pdftex.def Info: images/ia/formula.png  used on input line 167.
 
 
 bibitemlist
+Runaway argument?
+ \abntrefinfo {{BRASIL. Ministério da Agricultura e Pecuária}}{{BRA\ETC.
+! Paragraph ended before \BR@@lbibitem was complete.
+<to be read again> 
+                   \par 
+l.66 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
 \openout4 = `tcc-ifbaiano.mw'.
 
 [41
@@ -3597,15 +3608,23 @@ enddocument/afterlastpage: lastpage setting LastPage.
 
 \openout4 = `tcc-ifbaiano.mw'.
 
+\openout4 = `tcc-ifbaiano.mw'.
+
+\openout4 = `tcc-ifbaiano.mw'.
+
 )
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 \openout4 = `tcc-ifbaiano.brf'.
 
 Package rerunfilecheck Info: File `tcc-ifbaiano.brf' has not changed.
-(rerunfilecheck)             Checksum: C2A32BD6DCD86173ED1ECC1959EE5E8B;4687.
+(rerunfilecheck)             Checksum: 1818BD291C89382BE4D5FF454B62527D;4742.
 \openout4 = `tcc-ifbaiano.nlo'.
 
 \openout4 = `tcc-ifbaiano.glo'.
@@ -3620,11 +3639,11 @@ Package rerunfilecheck Info: File `tcc-ifbaiano.brf' has not changed.
 
  ) 
 Here is how much of TeX's memory you used:
- 54128 strings out of 474222
- 1006451 string characters out of 5748732
+ 54144 strings out of 474222
+ 1006738 string characters out of 5748732
  1942975 words of memory out of 5000000
- 73723 multiletter control sequences out of 15000+600000
- 698608 words of font info for 437 fonts, out of 8000000 for 9000
+ 73730 multiletter control sequences out of 15000+600000
+ 698865 words of font info for 441 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  125i,17n,121p,3258b,850s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
@@ -3638,7 +3657,7 @@ b></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on tcc-ifbaiano.pdf (50 pages, 4658847 bytes).
+Output written on tcc-ifbaiano.pdf (50 pages, 4658718 bytes).
 PDF statistics:
  1102 PDF objects out of 1200 (max. 8388607)
  945 compressed objects within 10 object streams
