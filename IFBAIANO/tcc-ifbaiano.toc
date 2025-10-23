@@ -1,0 +1,60 @@
+\babel@toc {brazil}{}\relax
+\babel@toc {brazil}{}\relax
+\changetocdepth {4}
+\babel@toc {brazil}{}\relax
+\babel@toc {english}{}\relax
+\babel@toc {brazil}{}\relax
+\babel@toc {brazil}{}\relax
+\babel@toc {brazil}{}\relax
+\babel@toc {brazil}{}\relax
+\babel@toc {brazil}{}\relax
+\babel@toc {brazil}{}\relax
+\babel@toc {brazil}{}\relax
+\babel@toc {english}{}\relax
+\babel@toc {brazil}{}\relax
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{11}{chapter.1}%
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Objetivos}}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Objetivo Geral}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Objetivos Específicos}{13}{section.2.2}%
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Justificativa}}{14}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Revisão Bibliográfica/Teórica}}{16}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Produção \textit {in vitro}}{16}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Classificação de Oócitos}{17}{subsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.1}Classificação I}{18}{subsubsection.4.1.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.2}Classificação II}{19}{subsubsection.4.1.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.1.3}Classificação III}{20}{subsubsection.4.1.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.1.4}Classificação IV}{21}{subsubsection.4.1.1.4}%
+\contentsline {section}{\numberline {4.2}Visão Computacional}{22}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Processamento Digital de Imagens}{23}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}OpenCV}{24}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Inteligência Artificial}{24}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Aprendizado de Máquina}{25}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Redes Neurais Artificiais}{25}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}Redes Neurais Profundas}{26}{subsubsection.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {4.3.2.2}Redes Neurais Convolucionais}{26}{subsubsection.4.3.2.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.3}Segmentação de Instância}{28}{subsubsection.4.3.2.3}%
+\contentsline {subsubsection}{\numberline {4.3.2.4}R-CNN}{29}{subsubsection.4.3.2.4}%
+\contentsline {subsubsection}{\numberline {4.3.2.5}Mask R-CNN}{30}{subsubsection.4.3.2.5}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Metodologia}}{31}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Visualização e Coleta}{32}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Pré-processamento}{33}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}OpenCV}{33}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}LabelMe}{33}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Detectron2}{34}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Treinamento}{35}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Classificação}{36}{section.5.4}%
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Resultados e Discussão}}{39}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Título I}{39}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Sub-Título I}{39}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Sub-Título II}{39}{subsection.6.1.2}%
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Conclusão}}{40}{chapter.7}%
+\vspace {\cftbeforechapterskip }
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{41}{section*.28}%
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Título do Apêndice A}}{45}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Título do Apêndice B}}{46}{appendix.B}%
+\cftinsert {AAA}
+\renewcommand *{\cftappendixname }{ANEXO \space }
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Título do Anexo A}}{47}{appendix.anexochapback.1}%
+\contentsline {section}{\numberline {A.1}CONFIGURAÇÕES DE PDF}{47}{section.anexochapback.1.1}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Título do Anexo B}}{48}{appendix.anexochapback.2}%

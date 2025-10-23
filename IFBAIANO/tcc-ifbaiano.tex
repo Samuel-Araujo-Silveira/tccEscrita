@@ -1,0 +1,246 @@
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% ICMC: Modelo de Trabalho Acadêmico (tese de doutorado, dissertação de
+% mestrado e trabalhos monográficos em geral) em conformidade com 
+% ABNT NBR 14724:2011: Informação e documentação - Trabalhos acadêmicos -
+% Apresentação
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+
+% Opções: 
+%   Qualificação          = qualificacao 
+%   Curso                 = doutorado/mestrado
+%   Situação do trabalho  = pre-defesa/pos-defesa (exceto para qualificação)
+%   Versão para impressão = impressao
+\documentclass[qualificacao]{packages/icmc}
+
+% ---------------------------------------------------------------------------
+% Pacotes Opcionais
+% ---------------------------------------------------------------------------
+\usepackage{rotating}           % Usado para rotacionar o texto
+\usepackage[all,knot,arc,import,poly]{xy}   % Pacote para desenhos gráficos
+% Este pacote pode conflitar com outros pacotes gráficos como o ``pictex''
+% Então é necessário usar apenas um dos pacotes conflitantes
+\newcommand{\VerbL}{0.52\textwidth}
+\newcommand{\LatL}{0.42\textwidth}
+
+% ---------------------------------------------------------------------------
+
+
+
+
+
+
+
+% ---
+% Informações de dados para CAPA e FOLHA DE ROSTO
+% ---
+% Tanto na capa quanto nas folhas de rosto apenas a primeira letra da primeira palavra (ou nomes próprios) devem estar em letra maiúscula, todas as demais devem ser em letra minúscula.
+\tituloPT{Classificação de Oócitos bovinos através de Aprendizado de Máquina}
+\tituloEN{Classification of Bovine Oocytes through Machine Learning}
+\autor[Silveira, S. A.]{Samuel Araújo Silveira}
+\genero{M} % Gênero do autor (M = Masculino / F = Feminino)
+\orientador[Orientador]{Prof. Dr.}{Carlos Anderson Oliveira Silva}
+\coorientador{Prof. Dr.}{José Assunção Silveira Júnior}
+\curso{CCMC}
+\data{29}{06}{2019} % Data do depósito
+\idioma{PT} % Idioma principal do documento (PT = português / EN = inglês)
+% ---
+
+
+
+% ---
+% RESUMOS
+% ---
+
+% Resumo em PORTUGUÊS
+% conter no máximo 500 palavras
+% conter no mínimo 1 e no máximo 5 palavras-chave
+\textoresumo[brazil]{
+	A pecuária ocupa uma posição relevante no contexto socioeconômico brasileiro, já que o Brasil está entre os maiores exportadores de leite e carne bovina do mundo. O que torna isso possível são os métodos de reprodução animal assistida, que garantem um maior número de descendentes com boas genéticas. Um desses métodos é a produção \textit{in vitro} cujas duas etapas iniciais são as de coleta e classificação de células reprodutoras. Atualmente, a etapa de classificação precisa ser feita de forma manual e apenas por profissionais capacitados, o que causa um prejuízo grave na eficiência do processo. Dessa forma, este trabalho desenvolveu
+	um modelo de aprendizado de máquina capaz de classificar oócitos bovinos com o objetivo de aprimorar a eficiência de
+	procedimentos de reprodução animal assistida. Os métodos empregados para automatizar esse processo são baseados em redes neurais convolucionais e processamento digital de imagens. Com isso, pretende-se
+	substituir o trabalho manual e tradicional de classificação, aumentar
+	a eficiência da produção \textit{in vitro} e aprimorar a qualidade genética do gado brasileiro
+	através de uma melhor classificação e seleção dos gametas femininos bovinos. A pesquisa
+	demonstra uma colaboração entre computação e pecuária que pode superar práticas tradicionais
+	através da proposta de soluções mais eficientes.
+}{Aprendizado de Máquina, Classificação de Oócitos, Reprodução Animal Assistida, Redes Neurais Convolucionais, Agropecuária}
+
+% resumo em INGLÊS
+% conter no máximo 500 palavras
+% conter no mínimo 1 e no máximo 5 palavras-chave
+\textoresumo[english]{
+	Livestock farming occupies a relevant position in the Brazilian socioeconomic context, since Brazil is among the largest exporters of milk and beef in the world. What makes this possible are the methods of assisted animal reproduction, which guarantee a greater number of descendants with good genetics. One of these methods is \textit{in vitro} production, whose two initial stages are the collection and classification of reproductive cells. Currently, the classification stage must be done manually and only by trained professionals which causes a massive problem in the efficiency of this process. Thus, this work developed a system capable of classifying bovine oocytes with the objective of improving the efficiency of assisted animal reproduction procedures. The methods used to automate this process are based on convolutional neural networks and digital image processing. With this, the aim is to replace the manual and traditional work of classification, increase the efficiency of \textit{in vitro} production, and improve the genetic quality of Brazilian cattle through better classification and selection of female bovine gametes. The research
+	demonstrates a collaboration between computing and livestock that can overcome traditional practices
+	by proposing more efficient solutions.
+}{Machine Learning, Oocyte Classification, Assisted Animal Reproduction, Convolutional Neural Networks, animal husbandry}
+
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+
+
+% Inserir a ficha catalográfica
+\incluifichacatalografica{tex/pre-textual/ficha-catalografica/ficha-catalografica}
+
+% DEDICATÓRIA / AGRADECIMENTO / EPÍGRAFE
+%\textodedicatoria*{tex/pre-textual/dedicatoria/dedicatoria}
+%\textoagradecimentos*{tex/pre-textual/agradecimentos/agradecimentos}
+\textoepigrafe*{tex/pre-textual/epigrafe/epigrafe}
+
+% Inclui a lista de figuras
+\incluilistadefiguras
+
+% Inclui a lista de tabelas
+\incluilistadetabelas
+
+% Inclui a lista de quadros
+%\incluilistadequadros
+
+% Inclui a lista de algoritmos
+%\incluilistadealgoritmos
+
+% Inclui a lista de códigos
+%\incluilistadecodigos
+
+% Inclui a lista de siglas e abreviaturas
+\incluilistadesiglas
+
+% Inclui a lista de símbolos
+%\incluilistadesimbolos
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+	% ----------------------------------------------------------
+	% ELEMENTOS TEXTUAIS
+	% ----------------------------------------------------------
+	\textual
+	
+	\chapter{Introdução}
+	\label{chapter:introducao}
+	\input{tex/introducao}
+	
+	\chapter{Objetivos}
+	\label{chapter:objetivos}
+	\input{tex/objetivos}
+	
+	%\chapter{Definição do Problema}
+	%\label{chapter:definicao-do-problema}
+	%\input{tex/definicao-do-problema}
+	
+	%\chapter{Hipótese}
+	%\label{chapter:hipotese}
+	%\input{tex/hipotese}
+	
+	\chapter{Justificativa}
+	\label{chapter:justificativa}
+	\input{tex/justificativa}
+	
+	\chapter{Revisão Bibliográfica/Teórica}
+	\label{chapter:revisao-bibliografica-teorica}
+	\input{tex/revisao-bibliografica-teorica}
+	
+	\chapter{Metodologia}
+	\label{chapter:metodologia}
+	\input{tex/metodologia}
+	
+	%\chapter{Resultados Esperados}
+	%\label{chapter:resultados-esperados}
+	%\input{tex/resultados-esperados}
+	
+	%\chapter{Cronograma}
+	%\label{chapter:cronograma}
+	%\input{tex/cronograma}
+	
+	\chapter{Resultados e Discussão}
+	\label{chapter:resultados-discussao}
+	\input{tex/resultados-discussao}
+	
+	\chapter{Conclusão}
+	\label{chapter:conclusao}
+	\input{tex/conclusao}
+	
+	
+	
+	
+	% ---
+	% Finaliza a parte no bookmark do PDF, para que se inicie o bookmark na raiz
+	% ---
+	\bookmarksetup{startatroot}% 
+	% ---
+	
+	% ----------------------------------------------------------
+	% ELEMENTOS PÓS-TEXTUAIS
+	% ----------------------------------------------------------
+	\postextual
+	
+	% ----------------------------------------------------------
+	% Referências bibliográficas Título da Pesquisa em Inglês
+	% ----------------------------------------------------------
+	\bibliography{references}
+	
+	% ---------------------------------------------------------------------
+	% GLOSSÁRIO
+	% ---------------------------------------------------------------------
+	
+	% Arquivo que contém as definições que vão aparebovinoscer no glossário
+	%\input{tex/glossario}
+	% Comando para incluir todas as definições do arquivo glossario.tex
+	%\glsaddall
+	% Impressão do glossário
+	%\printglossaries
+	
+	% ----------------------------------------------------------
+	% Apêndices
+	% ----------------------------------------------------------
+	
+	% ---
+	% Inicia os apêndices
+	% ---
+	\begin{apendicesenv}
+		
+		% Apêndice A
+		\chapter{Título do Apêndice A}
+		\label{chapter:apendicea}
+		
+		% Apêndice B
+		\chapter{Título do Apêndice B}
+		\label{chapter:apendiceb}
+		
+	\end{apendicesenv}
+	% --- 
+	
+	
+	% ----------------------------------------------------------
+	% Anexos
+	% ----------------------------------------------------------
+	
+	% ---
+	% Inicia os anexos
+	% ---\\
+	\begin{anexosenv}
+		
+		\chapter{Título do Anexo A} 
+		\label{chapter:anexoa}
+		
+		% CONFIGURAÇÕES DE PDF
+		\section{CONFIGURAÇÕES DE PDF}
+		
+		%inserindo uma página em branco depois da página 1
+		%\includepdf[pages={1,{},2-10}]{arquivo03.pdf}
+		
+		%inserindo múltiplas páginas numa única página
+		%\includepdf[pages={286-291},nup=2x3]{arquivo05.pdf}
+		
+		\chapter{Título do Anexo B} 
+		\label{chapter:anexob}
+		
+	\end{anexosenv}
+	% ---
+	
+	
+\end{document}

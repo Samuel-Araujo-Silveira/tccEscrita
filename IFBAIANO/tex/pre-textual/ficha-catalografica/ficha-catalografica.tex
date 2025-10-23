@@ -1,0 +1,112 @@
+% --------------------
+% Ficha Catalográfica para Trabalhos de Conclusão de Curso  
+% 
+% Alterado Por: Dr. Naidson Clayr Santos Ferreira
+%		(http://lattes.cnpq.br/7401534350061823)
+% --------------------
+% 08.11.2018 v1tuned
+% --------------------
+% Agradecimentos a Overleaf pela oportunidade 
+% --------------------
+% Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas -  Guanambi/BA
+% --------------------
+\documentclass[12pt,a4paper]{abntex2}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{lastpage}
+\usepackage{microtype} 
+\usepackage{paralist} 
+
+\renewcommand{\familydefault}{\sfdefault}
+
+%BEGIN-------EXCLUSIVA ENTRADA DE DADOS PELO ALUNO--
+
+\def \discentenome{Samuel}
+\def \discentesobrenome{Araújo Silveira}
+
+\def \titulotrabalho{Classificação de Oócitos Bovinos Através de Aprendizado de Máquina}
+
+\def \palavraschavea{Palavra 1}
+\def \palavraschaveb{Palavra 2}
+\def \palavraschavec{Palavra 3}
+\def \palavraschaved{Palavra 4}
+
+\def \palavraschavesInglesa{Keyword 1}
+\def \palavraschavesInglesb{Keyword 2}
+\def \palavraschavesInglesc{Keyword 3}
+\def \palavraschavesInglesd{Keyword 4}
+
+\def \proforientadornome{Carlos Anderson Oliveira }
+\def \proforientadorsobrenome{Silva}
+\def \proforientadortitulacao{Dr.}
+
+\def \profcoorientadornome{José Assunção Silveira}
+\def \profcoorientadorsobrenome{Júnior}
+\def \profcoorientadortitulacao{Dr.}
+
+\tipotrabalho{Trabalho de Conclusão de Curso (Graduação - Tecnólogo em Análise e Desenvolvimento de Sistemas)}
+\instituicao{Instituto Federal de Educação, Ciência e Tecnologia Baiano}
+\def \cidadededefesa{Guanambi, Bahia}
+\def \campus{Campus Guanambi}
+
+%END-------EXCLUSIVA ENTRADA DE DADOS PELO ALUNO--
+
+\def \profcoorientador{\profcoorientadornome~\profcoorientadorsobrenome}
+\def \proforientador{\proforientadornome~\proforientadorsobrenome}
+\def \palavraschavesIngles{\palavraschavesInglesa.~\palavraschavesInglesb.~\palavraschavesInglesc.~\palavraschavesInglesd.}
+\def \palavraschaves{\palavraschavea.~\palavraschaveb.~\palavraschavec.~\palavraschaved}
+\def \discente{\discentenome~\discentesobrenome}
+\autor{\discente}
+\titulo{\titulotrabalho}
+\data{\the\year}
+\local{\cidadededefesa}
+
+\orientador{\proforientador}
+\coorientador{\profcoorientador}
+
+
+\begin{document}
+	\selectlanguage{brazil}
+	
+	\begin{fichacatalografica}
+		\sffamily
+		\vspace*{\fill}					% Posição vertical
+		\hrule							% Linha horizontal
+		\begin{center}					% Minipage Centralizado
+			\begin{minipage}[c]{12.5cm}		% Largura
+				
+				\discentesobrenome, \discentenome%\imprimirautor
+				
+				\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
+				\imprimirlocal, \imprimirdata.
+				
+				\hspace{0.5cm} \pageref{LastPage} f. : il. (alguma cor.)\\
+				
+				\hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador
+				
+				%    \hspace{0.5cm} \imprimircoorientadorRotulo~\imprimircoorientador\\
+				
+				\hspace{0.5cm}
+				\parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao, \campus, \imprimirdata.}\\[1em]
+				
+				\hspace{0.5cm}
+				\begin{inparaenum}[1.]
+					\item \palavraschavea.
+					\item \palavraschaveb.
+					\item \palavraschavec.
+					\item \palavraschaved.
+				\end{inparaenum}
+				\begin{inparaenum}[I.]
+					\item \proforientadorsobrenome, \proforientadornome.
+					%\item \profcoorientadorsobrenome, \profcoorientadornome.
+					\item \imprimirinstituicao.
+					\item \campus.
+					\item \titulotrabalho.\\
+				\end{inparaenum}
+			\end{minipage}
+		\end{center}
+		\hrule
+	\end{fichacatalografica}
+\end{document}

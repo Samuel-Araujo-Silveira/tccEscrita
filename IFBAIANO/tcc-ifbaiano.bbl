@@ -1,0 +1,365 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Abdulla 2018]{abdulla2018}
+\abntrefinfo{Abdulla}{Abdulla}{2018}
+{ABDULLA, W. \textbf{Splash of Color: Instance Segmentation with Mask {R-CNN}
+  and {TensorFlow}}. 2018.
+Dispon{\'\i}vel em:
+  \url{https://engineering.matterport.com/splash-of-color-instance-segmentation-with-mask-r-cnn-and-tensorflow-7c761e238b46}.}
+
+\bibitem[Agrawal 2020]{agrawal2020}
+\abntrefinfo{Agrawal}{Agrawal}{2020}
+{AGRAWAL, T. \textbf{Hyperparameter Optimization in Machine Learning: Make your
+  machine learning and deep learning models more efficient}. 1. ed.. ed.
+  Berkeley, CA: Apress, 2020. XIX, 166~p.
+ISBN 978-1-4842-6578-9.}
+
+\bibitem[Alves 2018]{Alves2018}
+\abntrefinfo{Alves}{Alves}{2018}
+{ALVES, G. \textbf{Entendendo Redes Convolucionais (CNNs)}. 2018.
+  \url{https://medium.com/neuronio-br/entendendo-redes-convolucionais-cnns-d10359f21184}.
+Publicado em Neurônio BR, Acesso em: 23 ago. 2024.}
+
+\bibitem[Ballard e Brown 1982]{BALLARD}
+\abntrefinfo{Ballard e Brown}{Ballard; Brown}{1982}
+{BALLARD, D.~H.; BROWN, C.~M. \textbf{Computer Vision}. Englewood Cliffs, NJ:
+  Prentice Hall, 1982. 544~p.
+ISBN 0131653164.}
+
+\bibitem[{Bioinnova} 2024]{bioinnova2024}
+\abntrefinfo{{Bioinnova}}{{Bioinnova}}{2024}
+{{Bioinnova}. \textbf{{Bioinnova - Biotecnologia e Inovação}}. 2024.
+  \url{https://www.bioinnova.com.br/}.
+Acessado em: 15 ago. 2024.}
+
+\bibitem[Bohani, Suliman, Saripuddin, Syarmila e Salleh 2021]{BOHANI}
+\abntrefinfo{Bohani, Suliman, Saripuddin, Syarmila e Salleh}{Bohani; Suliman;
+  Saripuddin; Syarmila; Salleh}{2021}
+{BOHANI, F.~A.; SULIMAN, A.; SARIPUDDIN, M.; SYARMILA, S.; SALLEH, N.~S. M. A
+  comprehensive analysis of supervised learning techniques for electricity
+  theft detection.
+\textbf{Journal of Electrical and Computer Engineering}, v.~2021, 07 2021.}
+
+\bibitem[Bradski e Kaehler 2008]{BRADSKI2008}
+\abntrefinfo{Bradski e Kaehler}{Bradski; Kaehler}{2008}
+{BRADSKI, G.; KAEHLER, A. \textbf{Learning OpenCV}. [S.l.]: O'Reilly Media,
+  Inc., 2008.
+ISBN 9780596554040.}
+
+\bibitem[Camargo e Pereira 2022]{Camargo2022}
+\abntrefinfo{Camargo e Pereira}{Camargo; Pereira}{2022}
+{CAMARGO, L.~S. de A.; PEREIRA, J.~F. Genome-editing opportunities to enhance
+  cattle productivity in the tropics.
+\textbf{CABI Agriculture and Bioscience}, v.~3, p.~8, 2022.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1186/s43170-022-00075-w}.}
+
+\bibitem[Carvalho 2021]{CARVALHO}
+\abntrefinfo{Carvalho}{Carvalho}{2021}
+{CARVALHO, A. C. P. d. L.~F. Inteligência artificial: riscos, benefícios e
+  uso responsável.
+\textbf{Estudos Avançados}, v.~35, n.~101, p. 21--36, apr 2021.
+Dispon{\'\i}vel em: \url{https://www.revistas.usp.br/eav/article/view/185020}.}
+
+\bibitem[Chaki e Dey 2019]{CHAKI2019}
+\abntrefinfo{Chaki e Dey}{Chaki; Dey}{2019}
+{CHAKI, J.; DEY, N. \textbf{A Beginner’s Guide to Image Preprocessing
+  Techniques}. Boca Raton: Taylor \& Francis, 2019.  (Intelligent Signal
+  Processing and Data Analysis).
+ISBN 9781138339316.}
+
+\bibitem[Deisenroth, Faisal e Ong 2020]{DEISENROTH}
+\abntrefinfo{Deisenroth, Faisal e Ong}{Deisenroth; Faisal; Ong}{2020}
+{DEISENROTH, M.~P.; FAISAL, A.~A.; ONG, C.~S. \textbf{Mathematics for Machine
+  Learning}. Cambridge, United Kingdom: Cambridge University Press, 2020.}
+
+\bibitem[Elsevier 2024]{ELSEVIERcitoplasma}
+\abntrefinfo{Elsevier}{Elsevier}{2024}
+{ELSEVIER. \textbf{Citoplasma inferior do oócito secundário}. 2024.
+Acesso em: 6 ago. 2024.
+Dispon{\'\i}vel em:
+  \url{https://www.elsevier.com/resources/anatomy/secondary-oocyte/cytoplasm/cytoplasm-inferior/15466}.}
+
+\bibitem[{Embrapa} 2021]{EMBRAPA}
+\abntrefinfo{{Embrapa}}{{Embrapa}}{2021}
+{{Embrapa}. \textbf{{PIVE. Conteúdo migrado na íntegra em: 22/12/2021.
+  Embrapa Recursos Genéticos e Biotecnologia, Laboratório de Reprodução
+  Animal}}. 2021.
+Disponível em:
+  \url{https://www.embrapa.br/agencia-de-informacao-tecnologica/tematicas/reproducao-animal/tecnologias/pive}.
+  Acesso em: 04 ago. 2024.}
+
+\bibitem[Embrapa 2024]{EmbrapaCarneBovina2024}
+\abntrefinfo{Embrapa}{Embrapa}{2024}
+{EMBRAPA. \textbf{Qualidade da carne bovina}. 2024.
+  \url{https://www.embrapa.br/qualidade-da-carne/carne-bovina}.
+Acesso em: 23 ago. 2024.}
+
+\bibitem[{FAO} 2019]{FAO2019}
+\abntrefinfo{{FAO}}{{FAO}}{2019}
+{{FAO}. \textbf{FAO Statistical Database}. 2019.
+  \url{http://www.fao.org/faostat}.
+Acesso em: 23 de agosto de 2024.}
+
+\bibitem[FAOSTAT 2021]{FAOSTAT2022c}
+\abntrefinfo{FAOSTAT}{FAOSTAT}{2021}
+{FAOSTAT. \textbf{Carne Bovina - Produção (milhões de toneladas)}. 2021.
+  \url{http://fenix.fao.org/faostat/internal/en/\#data}.
+Acesso em: 19 jul. 2022.}
+
+\bibitem[Filho \textit{et al.} 2011]{PENITENTE}
+\abntrefinfo{Filho \textit{et al.}}{Filho \textit{et al.}}{2011}
+{FILHO, J. M.~P. \textit{et al.} \textbf{Produção de embriões bovinos in
+  vivo e in vitro}. [\textit{S.l.: s.n.}]: Universidade Federal de
+  Viçosa-Departamento de Zootecnia, 2011.}
+
+\bibitem[Gomes, Cora e Dusi 2005]{gomes2005}
+\abntrefinfo{Gomes, Cora e Dusi}{Gomes; Cora; Dusi}{2005}
+{GOMES, A. C. M.~M.; CORA, J.; DUSI, D.~M. de A. \textbf{Câmara de Exaustão
+  para utilização em microscópio estereoscópico}. 2005.}
+
+\bibitem[Gonzalez e Woods 2010]{GONZALES}
+\abntrefinfo{Gonzalez e Woods}{Gonzalez; Woods}{2010}
+{GONZALEZ, R.~C.; WOODS, R.~E. \textbf{Processamento digital de imagem}.
+  [\textit{S.l.: s.n.}]: Pearson, 2010. v.~10.
+ISBN 8576054019.}
+
+\bibitem[Gouveia 2011]{GOUVEIA}
+\abntrefinfo{Gouveia}{Gouveia}{2011}
+{GOUVEIA, F.~F. \textbf{A produção in vitro de embriões bovinos}.
+  [\textit{S.l.: s.n.}], 2011.}
+
+\bibitem[Hafez e Hafez 2004]{HAFEZ}
+\abntrefinfo{Hafez e Hafez}{Hafez; Hafez}{2004}
+{HAFEZ, E. S.~E.; HAFEZ, B. \textbf{Reprodução animal}. [\textit{S.l.:
+  s.n.}], 2004.}
+
+\bibitem[Haykin 2001]{HAYKIN}
+\abntrefinfo{Haykin}{Haykin}{2001}
+{HAYKIN, S. \textbf{Redes Neurais: Princípios e Prática}. [\textit{S.l.:
+  s.n.}]: Bookman Editora, 2001.}
+
+\bibitem[Honda 2020]{HONDA2020}
+\abntrefinfo{Honda}{Honda}{2020}
+{HONDA, H. \textbf{Digging into {Detectron} 2 — part 1}. 2020.
+[S. l.].
+Dispon{\'\i}vel em:
+  \url{https://medium.com/@hirotoschwert/digging-into-detectron-2-47b2e794fabd}.}
+
+\bibitem[{IBM} 2024]{IBM2024}
+\abntrefinfo{{IBM}}{{IBM}}{2024}
+{{IBM}. \textbf{{O que são redes neurais convolucionais?}} 2024.
+Acesso em: 15 ago. 2024.
+Dispon{\'\i}vel em:
+  \url{https://www.ibm.com/br-pt/topics/convolutional-neural-networks}.}
+
+\bibitem[Jain, Kasturi e Schunck 1995]{JAIN}
+\abntrefinfo{Jain, Kasturi e Schunck}{Jain; Kasturi; Schunck}{1995}
+{JAIN, R.; KASTURI, R.; SCHUNCK, B.~G. \textbf{Machine Vision}. [\textit{S.l.:
+  s.n.}]: McGraw-Hill, Inc., 1995.
+ISBN 0-07-032018-7.}
+
+\bibitem[Jähne 2002]{JAHNE}
+\abntrefinfo{Jähne}{Jähne}{2002}
+{JäHNE, B. \textbf{Digital Image Processing}. Berlin; Heidelberg; New York;
+  Barcelona; Hong Kong; London; Milan; Paris; Tokyo: Springer, 2002.
+  (Engineering Online Library).
+ISBN 3-540-67754-2.}
+
+\bibitem[Krig 2014]{KRIG2014}
+\abntrefinfo{Krig}{Krig}{2014}
+{KRIG, S. \textbf{Computer Vision Metrics: Survey, Taxonomy, and Analysis}.
+  1st. ed. Berkeley, CA: Apress, 2014. 508~p.
+ISBN 978-1-4302-5929-9.}
+
+\bibitem[Kumar 2025]{kumar2025basiccnn}
+\abntrefinfo{Kumar}{Kumar}{2025}
+{KUMAR, G. M.~K. \textbf{Basic CNN Architecture: A Detailed Explanation of the
+  5 Layers in Convolutional Neural Networks}. [S. l.], 2025.
+Acesso em: 16 out. 2025.
+Dispon{\'\i}vel em: \url{https://www.upgrad.com/blog/basic-cnn-architecture/}.}
+
+\bibitem[Lad 2024]{Lad2024Detectron2}
+\abntrefinfo{Lad}{Lad}{2024}
+{LAD, R. \textbf{An introduction to Detectron2}. 2024. Medium.
+Publicado em 9 de agosto de 2024.
+Dispon{\'\i}vel em:
+  \url{https://medium.com/@ravina.lad01/an-introduction-to-detectron2-1b15e2f39b19}.}
+
+\bibitem[LeCun, Bottou, Bengio e Haffner 1998]{lecun1998gradient}
+\abntrefinfo{LeCun, Bottou, Bengio e Haffner}{LeCun; Bottou; Bengio;
+  Haffner}{1998}
+{LECUN, Y.; BOTTOU, L.; BENGIO, Y.; HAFFNER, P. {Gradient-Based Learning
+  Applied to Document Recognition}.
+\textbf{Proceedings of the IEEE}, v.~86, n.~11, p. 2278--2324, 1998.}
+
+\bibitem[Leibfried e First 1979]{LEIBFRIED}
+\abntrefinfo{Leibfried e First}{Leibfried; First}{1979}
+{LEIBFRIED, L.; FIRST, N.~L. Characterization of bovine follicular oocytes and
+  their ability to mature in vitro.
+\textbf{Journal of Animal Science}, v.~48, p. 76--86, 1979.}
+
+\bibitem[Mello \textit{et al.} 2016]{MELLO}
+\abntrefinfo{Mello \textit{et al.}}{Mello \textit{et al.}}{2016}
+{MELLO, R. R.~C. \textit{et al.} Produção in vitro (piv) de embriões em
+  bovinos.
+\textbf{Rev. bras. reprod. anim}, p. 6458--64, 2016.}
+
+\bibitem[Mohanasundaram, Malhotra, Arun e Periasamy
+  2019]{MOHANASUNDARAM2019139}
+\abntrefinfo{Mohanasundaram, Malhotra, Arun e Periasamy}{Mohanasundaram;
+  Malhotra; Arun; Periasamy}{2019}
+{MOHANASUNDARAM, R.; MALHOTRA, A.~S.; ARUN, R.; PERIASAMY, P. Chapter 8 - deep
+  learning and semi-supervised and transfer learning algorithms for medical
+  imaging. \textit{In}:  SANGAIAH, A.~K. (ed.). \textbf{Deep Learning and
+  Parallel Computing Environment for Bioengineering Systems}. Academic Press,
+  2019. p. 139--151.
+ISBN 978-0-12-816718-2.
+Dispon{\'\i}vel em:
+  \url{https://www.sciencedirect.com/science/article/pii/B9780128167182000154}.}
+
+\bibitem[Mueller e Eenennaam 2022]{Mueller2022}
+\abntrefinfo{Mueller e Eenennaam}{Mueller; Eenennaam}{2022}
+{MUELLER, M.~L.; EENENNAAM, A.~L. V. Synergistic power of genomic selection,
+  assisted reproductive technologies, and gene editing to drive genetic
+  improvement of cattle.
+\textbf{CABI Agriculture and Bioscience}, v.~3, p.~13, 2022.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1186/s43170-022-00080-z}.}
+
+\bibitem[Nan, Hsieh e Chen 2023]{nan2023coral}
+\abntrefinfo{Nan, Hsieh e Chen}{Nan; Hsieh; Chen}{2023}
+{NAN, F.-H.; HSIEH, Y.-Z.; CHEN, H.-C. Coral detection with machine learning.
+  \textit{In}:  IEEE. \textbf{2023 5th International Conference on Computer
+  Communication and the Internet (ICCCI)}. [\textit{S.l.: s.n.}], 2023. p.
+  207--209.}
+
+\bibitem[Netto e Gomes 2021]{NettoGomes2021}
+\abntrefinfo{Netto e Gomes}{Netto; Gomes}{2021}
+{NETTO, V.~N.; GOMES, A.~T. \textbf{Importância Econômica e Social}. 2021.
+  \url{https://www.embrapa.br/qualidade-da-carne/carne-bovina}.
+Conteúdo migrado na íntegra em: 08 dez. 2021.}
+
+\bibitem[Oliveira, Serapião e Quintão 2014]{Oliveira2014}
+\abntrefinfo{Oliveira, Serapião e Quintão}{Oliveira; Serapião;
+  Quintão}{2014}
+{OLIVEIRA, C.~S.; SERAPIãO, R.~V.; QUINTãO, C. C.~R. \textbf{Biotécnicas da
+  reprodução em bovinos: minicursos ministrados durante o 3º Simpósio
+  ``Biotécnicas da Reprodução em Bovinos'' no Laboratório de Reprodução
+  Animal do Campo Experimental Santa Mônica}. Juiz de Fora, MG: Embrapa Gado
+  de Leite, 2014.  (Documentos, 175). Outubro/2014.
+ISBN ISSN 1516-7453.}
+
+\bibitem[Oosting, Udo e Viets 2014]{oosting2014development}
+\abntrefinfo{Oosting, Udo e Viets}{Oosting; Udo; Viets}{2014}
+{OOSTING, S.; UDO, H.; VIETS, T. Development of livestock production in the
+  tropics: farm and farmers’ perspectives.
+\textbf{Animal}, Cambridge University Press, v.~8, n.~8, p. 1238--1248, 2014.}
+
+\bibitem[OpenCV]{geo}
+\abntrefinfo{OpenCV}{OpenCV}{a}
+{OPENCV. \textbf{Geometric Image Transformations}.
+Accessed: 2024-08-15.
+Dispon{\'\i}vel em:
+  \url{https://www.opencv.org.cn/opencvdoc/2.3.2/html/modules/imgproc/doc/geometric\_transformations.html\#}.}
+
+\bibitem[OpenCV]{his}
+\abntrefinfo{OpenCV}{OpenCV}{b}
+{OPENCV. \textbf{Histogram Equalization Tutorial}.
+Accessed: 2024-08-15.
+Dispon{\'\i}vel em:
+  \url{https://docs.opencv.org/3.4/d4/d1b/tutorial\_histogram\_equalization.html}.}
+
+\bibitem[OpenCV 2024]{OPENCV2024}
+\abntrefinfo{OpenCV}{OpenCV}{2024}
+{OPENCV. \textbf{About}. 2024.
+Acesso em: 14 ago. 2024.
+Dispon{\'\i}vel em: \url{https://opencv.org/about/}.}
+
+\bibitem[Rosebrock 2016]{rosebrock2016iou}
+\abntrefinfo{Rosebrock}{Rosebrock}{2016}
+{ROSEBROCK, A. \textbf{Intersection over Union (IoU) for object detection}.
+  2016.
+Acesso em: 20 out. 2025.
+Dispon{\'\i}vel em:
+  \url{https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/}.}
+
+\bibitem[Russell, Torralba, Murphy e Freeman 2008]{russell2008labelme}
+\abntrefinfo{Russell, Torralba, Murphy e Freeman}{Russell; Torralba; Murphy;
+  Freeman}{2008}
+{RUSSELL, B.~C.; TORRALBA, A.; MURPHY, K.~P.; FREEMAN, W.~T. Labelme: a
+  database and web-based tool for image annotation.
+\textbf{International journal of computer vision}, Springer, v.~77, n.~1, p.
+  157--173, 2008.}
+
+\bibitem[Sales \textit{et al.} 2024]{sales2024evolution}
+\abntrefinfo{Sales \textit{et al.}}{Sales \textit{et al.}}{2024}
+{SALES, J. N. d.~S.; PUGLIESI, G.; CARVALHO, L.~R.; SIM{\~O}ES, L. M.~S.;
+  LEMOS, L.~A.; VICENTE, M.~P.; SILVA, R. R.~R.; BARUSELLI, P.~S. Evolution
+  over the last 40 years of the assisted reproduction technologies in
+  cattle-the brazilian perspective i-timed artificial insemination.
+\textbf{Animal Reproduction}, SciELO Brasil, v.~21, n.~3, p. e20240034, 2024.}
+
+\bibitem[Shivaani e Madan 2024]{Shivaani2024}
+\abntrefinfo{Shivaani e Madan}{Shivaani; Madan}{2024}
+{SHIVAANI, M.; MADAN, P. Application of imaging and spectroscopy techniques for
+  grading of bovine embryos - a review.
+\textbf{Frontiers in Veterinary Science}, v.~11, p. 1364570, 2024.
+Dispon{\'\i}vel em: \url{https://doi.org/10.3389/fvets.2024.1364570}.}
+
+\bibitem[Sichman 2021]{SICHMAN}
+\abntrefinfo{Sichman}{Sichman}{2021}
+{SICHMAN, J.~S. Inteligência artificial e sociedade: avanços e riscos.
+\textbf{Estudos Avançados}, v.~35, n.~101, p. 37--50, apr 2021.
+Dispon{\'\i}vel em: \url{https://www.revistas.usp.br/eav/article/view/185024}.}
+
+\bibitem[Smola e Vishwanathan 2010]{SMOLA}
+\abntrefinfo{Smola e Vishwanathan}{Smola; Vishwanathan}{2010}
+{SMOLA, A.; VISHWANATHAN, S. \textbf{Introduction to Machine Learning}. The
+  Pitt Building, Trumpington Street, Cambridge, United Kingdom: Cambridge
+  University Press, 2010.
+ISBN 0521825830.}
+
+\bibitem[SPMR 2024]{SPMRcumulus}
+\abntrefinfo{SPMR}{SPMR}{2024}
+{SPMR. \textbf{Células do Cumulus}. 2024.
+Acesso em: 5 ago. 2024.
+Dispon{\'\i}vel em:
+  \url{https://www.spmr.pt/index.php/18-repropedia/c/97-celulas-do-cumulus\#:~:text=As\%20c\%C3\%A9lulas\%20do\%20cumulus\%20s\%C3\%A3o,prote\%C3\%A7\%C3\%A3o\%20e\%20matura\%C3\%A7\%C3\%A3o\%20do\%20o\%C3\%B3cito}.}
+
+\bibitem[Subasi 2020]{SUBASI202091}
+\abntrefinfo{Subasi}{Subasi}{2020}
+{SUBASI, A. Chapter 3 - machine learning techniques. \textit{In}:  SUBASI, A.
+  (ed.). \textbf{Practical Machine Learning for Data Analysis Using Python}.
+  Academic Press, 2020. p. 91--202.
+ISBN 978-0-12-821379-7.
+Dispon{\'\i}vel em:
+  \url{https://www.sciencedirect.com/science/article/pii/B9780128213797000035}.}
+
+\bibitem[Vargas, Paes e Vasconcelos 2016]{VARGAS2016}
+\abntrefinfo{Vargas, Paes e Vasconcelos}{Vargas; Paes; Vasconcelos}{2016}
+{VARGAS, A. C.~G.; PAES, A.; VASCONCELOS, C.~N. Um estudo sobre redes neurais
+  convolucionais e sua aplicação em detecção de pedestres. \textit{In}:
+  \textbf{Proceedings of the XXIX Conference on Graphics, Patterns and Images}.
+  [\textit{S.l.: s.n.}]: s.n., 2016.}
+
+\bibitem[Yenigün 2025]{Yenidun2025}
+\abntrefinfo{Yenigün}{Yenigün}{2025}
+{YENIGüN, O. \textbf{R-CNN, Fast R-CNN, Faster R-CNN, and Mask R-CNN}. Medium,
+  2025.
+Dispon{\'\i}vel em:
+  \url{https://towardsdev.com/r-cnn-fast-r-cnn-faster-r-cnn-and-mask-r-cnn-e7cd2e6f0a82}.}
+
+\bibitem[Zhang, Yang, Chen e Li 2018]{ZHANG2018146}
+\abntrefinfo{Zhang, Yang, Chen e Li}{Zhang; Yang; Chen; Li}{2018}
+{ZHANG, Q.; YANG, L.~T.; CHEN, Z.; LI, P. A survey on deep learning for big
+  data.
+\textbf{Information Fusion}, v.~42, p. 146--157, 2018.
+ISSN 1566-2535.
+Dispon{\'\i}vel em:
+  \url{https://www.sciencedirect.com/science/article/pii/S1566253517305328}.}
+
+\end{thebibliography}
