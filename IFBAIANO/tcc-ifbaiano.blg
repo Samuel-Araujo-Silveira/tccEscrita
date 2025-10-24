@@ -14,20 +14,16 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: references.bib
-Warning--entry type for "brasil:pecuaria:2025" isn't style-file defined
+Warning--entry type for "kashyap2024precision" isn't style-file defined
 --line 11 of file references.bib
-Warning--entry type for "rosebrock2016iou" isn't style-file defined
---line 87 of file references.bib
-Warning--entry type for "his" isn't style-file defined
---line 238 of file references.bib
 Warning--entry type for "abdulla2018" isn't style-file defined
---line 571 of file references.bib
-Warning--entry type for "HONDA2020" isn't style-file defined
---line 588 of file references.bib
+--line 568 of file references.bib
 Warning--entry type for "Yenidun2025" isn't style-file defined
---line 609 of file references.bib
+--line 606 of file references.bib
 Warning--entry type for "kumar2025basiccnn" isn't style-file defined
---line 629 of file references.bib
+--line 626 of file references.bib
+Warning--entry type for "henrique2024processamento" isn't style-file defined
+--line 1468 of file references.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
@@ -39,45 +35,45 @@ Warning--campo year vazio ou faltando em his
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 65 entries,
+You've used 64 entries,
             6708 wiz_defined-function locations,
-            1559 strings with 19885 characters,
-and the built_in function-call counts, 78013 in all, are:
-= -- 8598
-> -- 1633
-< -- 1754
-+ -- 2354
-- -- 497
-* -- 4852
-:= -- 9470
-add.period$ -- 236
-call.type$ -- 68
-change.case$ -- 483
-chr.to.int$ -- 110
-cite$ -- 55
-duplicate$ -- 7186
-empty$ -- 3825
-format.name$ -- 2320
-if$ -- 16279
+            1552 strings with 19231 characters,
+and the built_in function-call counts, 72930 in all, are:
+= -- 7857
+> -- 1600
+< -- 1536
++ -- 2122
+- -- 487
+* -- 4574
+:= -- 8909
+add.period$ -- 228
+call.type$ -- 67
+change.case$ -- 473
+chr.to.int$ -- 112
+cite$ -- 54
+duplicate$ -- 6492
+empty$ -- 3738
+format.name$ -- 2274
+if$ -- 15386
 int.to.chr$ -- 12
 int.to.str$ -- 3
-missing$ -- 1113
-newline$ -- 285
-num.names$ -- 267
-pop$ -- 1387
+missing$ -- 1095
+newline$ -- 280
+num.names$ -- 262
+pop$ -- 1342
 preamble$ -- 1
-purify$ -- 234
+purify$ -- 230
 quote$ -- 0
-skip$ -- 7932
+skip$ -- 7239
 stack$ -- 1
-substring$ -- 3099
-swap$ -- 2687
-text.length$ -- 55
+substring$ -- 2852
+swap$ -- 2453
+text.length$ -- 56
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 3
 warning$ -- 2
-while$ -- 370
+while$ -- 363
 width$ -- 0
-write$ -- 842
+write$ -- 827
 (There was 1 error message)

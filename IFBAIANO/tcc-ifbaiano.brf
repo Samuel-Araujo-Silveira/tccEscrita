@@ -3,6 +3,7 @@
 \backcite {EmbrapaCarneBovina2024}{{11}{1}{chapter.1}}
 \backcite {Oliveira2014}{{11}{1}{chapter.1}}
 \backcite {MELLO}{{11}{1}{chapter.1}}
+\backcite {henrique2024processamento}{{11}{1}{chapter.1}}
 \backcite {Mueller2022}{{12}{1}{chapter.1}}
 \backcite {FAOSTAT2022c}{{14}{3}{chapter.3}}
 \backcite {FAO2019}{{14}{3}{chapter.3}}
@@ -70,6 +71,8 @@
 \backcite {abdulla2018}{{29}{8}{figure.caption.18}}
 \backcite {Yenidun2025}{{29}{4.3.2.4}{subsubsection.4.3.2.4}}
 \backcite {Yenidun2025}{{30}{4.3.2.5}{subsubsection.4.3.2.5}}
+\backcite {Yenidun2025}{{30}{4.3.2.5}{subsubsection.4.3.2.5}}
+\backcite {kashyap2024precision}{{30}{4.3.2.6}{subsubsection.4.3.2.6}}
 \backcite {bioinnova2024}{{32}{5.1}{section.5.1}}
 \backcite {gomes2005}{{32}{10}{figure.caption.20}}
 \backcite {CHAKI2019}{{33}{5.2.1}{subsection.5.2.1}}
@@ -80,11 +83,5 @@
 \backcite {geo}{{33}{5.2.1}{subsection.5.2.1}}
 \backcite {KRIG2014}{{33}{5.2.1}{subsection.5.2.1}}
 \backcite {KRIG2014}{{33}{5.2.1}{subsection.5.2.1}}
-\backcite {russell2008labelme}{{34}{5.2.2}{subsection.5.2.2}}
-\backcite {nan2023coral}{{34}{5.2.2}{subsection.5.2.2}}
-\backcite {Lad2024Detectron2}{{34}{5.2.3}{subsection.5.2.3}}
-\backcite {HONDA2020}{{35}{12}{figure.caption.22}}
-\backcite {lecun1998gradient}{{36}{5.3}{section.5.3}}
-\backcite {lecun1998gradient}{{36}{5.3}{section.5.3}}
-\backcite {lecun1998gradient}{{36}{5.3}{section.5.3}}
-\backcite {rosebrock2016iou}{{38}{14}{figure.caption.25}}
+\backcite {russell2008labelme}{{33}{5.2.2}{subsection.5.2.2}}
+\backcite {Lad2024Detectron2}{{34}{5.3}{section.5.3}}

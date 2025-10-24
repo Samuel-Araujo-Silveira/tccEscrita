@@ -5,12 +5,12 @@
 
 Neste capítulo, serão apresentadas todas as ferramentas e os procedimentos utilizados para a construção do modelo computacional de reconhecimento e classificação oócitos bovinos.
 
-Primeiramente, os oócitos foram visualizados através de instrumentos de aproximação por conta de seu tamanho microscópico e as suas imagens foram capturadas e armazenadas. Em seguida, as imagens captadas são pré-processadas para a retirada de ruídos e padronização de camadas; processadas em uma rede neural para reconhecer as regiões onde se encontram os oócitos e, finalmente, o modelo de aprendizado de máquina é construído para classificar os oócitos identificados. Esse processo pode ser visualizado na figura \ref{fig:processo} e será descrito com mais detalhes nas seções seguintes.
+Primeiramente, os oócitos foram visualizados através de instrumentos de aproximação por conta de seu tamanho microscópico e as suas imagens foram capturadas e armazenadas. Em seguida, as imagens captadas são pré-processadas para a retirada de ruídos e padronização de camadas; processadas em uma rede neural para reconhecer as regiões onde se encontram os oócitos; e, finalmente, construção do modelo para classificá-los. Esse processo pode ser visualizado na figura \ref{fig:processo} e será descrito com mais detalhes nas seções seguintes.
 
 \begin{figure}[H]
 	\centering
 	\caption{Demonstração das Etapas de Construção do Modelo}
-	\includegraphics[width=0.9\textwidth]{images/ia/processo3.png}
+	\includegraphics[width=0.9\textwidth]{images/ia/processo5.png}
 	\caption*{\textbf{Fonte: Elaboração própria}}
 	\label{fig:processo}
 \end{figure}
@@ -38,20 +38,17 @@ Nessa seção, todas as etapas necessárias para preparar as condições mínica
 \subsection{OpenCV}
 O pré-processamento consiste em corrigir aspectos ruidosos nas imagens, tais como: sujeiras, áreas ofuscadas, dentre outros. Essas correções podem ser radiométricas ou geométricas \cite{CHAKI2019} e são realizadas através da biblioteca OpenCV e seus métodos.
 
-Algumas imagens passaram por uma correção radiométrica \cite{CHAKI2019}. Esse tipo de problema surge quando há um mal posicionamento do objeto capturado diante da luz ou falta de calibração adequada nos sensores. Isso faz com que alguns \textit{pixels} da imagem não sejam constituídos, ou seja, será necessário reconstituí-los de forma artificial através dos pixels mais próximos como referência \cite{CHAKI2019}. Para tratar esse tipo de problema, os métodos da OpenCv que foram utilizados são: equalizeHist() e cvtColor() \cite{his} . 
+Algumas imagens passaram por uma correção radiométrica \cite{CHAKI2019}. Esse tipo de problema surge quando há um mal posicionamento do objeto capturado diante da luz ou falta de calibração adequada nos sensores. Isso faz com que alguns \textit{pixels} da imagem não sejam constituídos, ou seja, será necessário reconstituí-los de forma artificial através dos \textit{pixels} mais próximos como referência \cite{CHAKI2019}. Para tratar esse tipo de problema, os fundamentos utilizados são equalização de histograma e conversão de espaço de cores\ \cite{his} . 
 
-Houve também casos em que movimentos durante o processo de captura e/ou lentes distorcidas no dispositivo de captação ocasionam um posicionamento distorcido de determinados \textit{pixels} da imagem \cite{CHAKI2019}. Para resolver isso, foi necessário reposicionar os \textit{pixels} que foram desvirtuados através dos métodos de transformações geométrica da OpenCV, que são: undistort(), getPerspectiveTransform(), e warpAffine() \cite{geo}. 
+Houve também casos em que movimentos durante o processo de captura e/ou lentes distorcidas no dispositivo de captação ocasionam um posicionamento distorcido de determinados \textit{pixels} da imagem \cite{CHAKI2019}. Para resolver isso, foi necessário reposicionar os \textit{pixels} que foram desvirtuados através das técnicas de transformações geométrica da OpenCV, que são: correção de distorção de lente, transformação de perspectiva, e transformação afim \cite{geo}. 
 
 Para ajustes na iluminação, utilizou-se filtros de gradiente e equalizações de histograma, que servem para calibrar a regularidade de intensidade de \textit{pixels} \cite{KRIG2014}. 
 
 Por fim, houve a necessidade de realizar ajustes relacionados ao foco de determinadas regiões da imagem captada. Por exemplo: se alguma região de interesse estiver desfocada ou se alguma região irrelevante estiver com muito foco, ambas essas situações precisarão ser reajustadas para que o processamento ocorra adequadamente \cite{KRIG2014}. 
 
-No entanto, o OpenCV se mostrou ineficiente para realizar o pré-processamento das imagens tendo em vista sua incapacidade de gerar os círculos nos lugares apropriados das imagens. 
-
 \subsection{LabelMe}
-Dessa forma, surgiu a necessidade de realizar o pré-processamento de forma manual. O LabelMe apresentou-se como uma eficiente tecnologia para esse fim tendo em vista sua praticidade em carregar o dataset, opção para desenhar os círculos nas imagens e geração dos JSONs que contém os dados pré-processados \cite{russell2008labelme}. 
+O \textit{LabelMe} também apresentou-se como uma eficiente tecnologia para pré-processamento tendo em vista sua praticidade em carregar \textit{datasets}, opção para desenhar os círculos nas imagens e geração dos JSONs que contém os dados pré-processados \cite{russell2008labelme}. 
 
-Todavia, houve um problema: o LabelMe gera um JSON específico para cada imagem. Isso é incompatível com várias redes neurais que esperam apenas um JSON contendo informações de todo o dataset pré-processado. Para contornar esse impasse, foi necessário utilizar o \textit{labelme2coco}, um algoritmo criado com o objetivo de agrupar vários JSONs em apenas um e no formato esperado pelas redes neurais \cite{nan2023coral}.
 
 Um exemplo de imagem pré-processada pode ser visualizado na Figura \ref{fig:imagempre}.
 
@@ -65,48 +62,35 @@ Um exemplo de imagem pré-processada pode ser visualizado na Figura \ref{fig:ima
 \end{figure}
 
 
-\subsection{Detectron2}
-Dessa forma, com o conjunto de imagens completamente pré-processado, foi possível utilizá-lo no Detectron2, que de acordo com \cite{Lad2024Detectron2}, é um \textit{framework} para diversos algoritmos de detecção de objetos e, entre eles, encontra-se o Mask R-CNN.  
+\section{Construção do Modelo de Identificação}
+Com o conjunto de imagens completamente pré-processado, foi possível utilizar o Detectron2, que de acordo com \cite{Lad2024Detectron2}, é um \textit{framework} para diversos algoritmos de detecção de objetos e, entre eles, encontra-se o Mask R-CNN.  
 
 Logo após, um modelo de aprendizado de máquina para identificar oócitos bovinos foi gerado com o Detectron2. A arquitetura desse modelo está representada na Figura \ref{fig:arquitetura}
-
-
 
 \begin{figure}[H]
 	\centering
 	\caption{Arquitetura do Modelo de Aprendizado de Máquina para Identificação de Oócitos}
-	\includegraphics[width=0.8\textwidth]{images/ia/arquitetura.png}
-	\caption*{\textbf{Fonte: \citeonline{HONDA2020}.}} 
+	\includegraphics[width=0.8\textwidth]{images/ia/arquitetura2.png}
+	\caption*{\textbf{Fonte: Elaboração Própria.}} 
 	\label{fig:arquitetura}
 \end{figure}
 
-Como pode ser visto na imagem, a arquitetura é divida em três principais seções: \textit{Backbone Network }, \textit{Region Proposal Network} e \textit{Box Head}.
+Percebe-se uma arquitetura baseada no \textit{Mask R-CNN} utilizado pelo \textit{Detectron2} e adaptada especificamente para detecção e segmentação de oócitos bovinos.
 
-A primeira tem como objetivo enxergar a imagem ao mesmo tempo que hierarquiza as informações percebidas. Os níveis iniciais dessa hierarquia possuem melhor resolução e conseguem identifica mais facilmente objetos de interesse pequenos. Enquanto isso, os níveis do topo trabalham com resolução menores e extraem informações gerais e grandes. 
-
-O segundo analisa todas as informações pertinentes observadas pela primeira seção e classifica lugares com potencial para haver um objeto de interesse. Ou seja, são apenas candidatos a objetos. 
-
-Por fim, o terceiro irá analisar com precisão cada lugar em potencial definido anteriormente. Isso é feito a partir de reposicionamentos das marcações feitas pela etapa anterior e descarte de identificações redudantes. 
+Essa rede é composta por três módulos principais:
 
 
+\begin{itemize}
+	\item \textbf{Backbone (ResNet + FPN)}: as imagens dos oócitos foram processadas e suas características, extraídas. A \textit{Feature Pyramid Network} (FPN) foi responsável por combinar informações em múltiplas escalas (fpnlateral2 – 5) com convoluções de 256 canais, algo que permitiu detectar oócitos de diferentes tamanhos e contrastes;
+	
+	\item \textbf{\textit{Region Proposal Network} (RPN)}: aqui, regiões de interesse foram geradas através de probabiliades de cada região conter um objeto de interesse;
+	
+	\item \textbf{ROI Heads (Box Head e Mask Head)}: as propostas geradas na etapa anterior foram refinadas através de classificações e ajustes das caixas delimitadoras dos oócitos.
+	
+\end{itemize}
 
+Logo após, houve a construção do modelo de identificação com os conjuntos de nome \textit{oocitosTrain} e \textit{oocitosVal} configurados para 1 classe (oócito) e com 1000 iterações.
 
-
-\section{Treinamento}
-Após os ajustes e pré-processamentos na imagens, foi  realizado o processamento através de uma Rede Neural Convolucional para realizar as classificações dos oócitos. 
-
-Primeiramente, a imagem do oócito precisará ser tratada por camadas convolucionais antes de ser processada de fato. A convolução irá acontecer através de uma matriz, chamada de detector de características, que irá percorrer toda a imagem e aplicar um filtro que seja útil para realizar o processamento mais adiante. Cada filtro é representado por uma matriz com valores pré-definidos e precisará acontecer uma multiplicação entre a matriz do filtro e a matriz da imagem que o detector de características estiver analisando durante a instância. Essa multiplicação irá ocorrer toda vez que o detector de características se movimentar pela imagem original. O resultado desse processo será um mapa de características, que é uma matriz cujos pixels são os resultados das multiplicações \cite{lecun1998gradient}.
-
-Para cada mapa de características gerado, a \sigla{ReLU}{Rectified Linear Unit} precisará ser aplicada para que valores negativos da matriz possam ser igualados a zero e os positivos sejam mantidos. Como essa função pode retorna qualquer valor acima de zero, os gradientes da imagem serão mantidos, algo positivo para o processamento \cite{lecun1998gradient}.
-
-A próxima etapa é chamada de subamostragem. Nessa parte, uma matriz irá percorrer o mapa de características segundo uma \textit{stride}. Essa matriz irá selecionar o maior valor de cada trecho analisado do mapa de características. Dessa forma, uma nova matriz irá ser gerada com cada valor escolhido. Isso resultará em em uma menor dimensão em relação ao mapa de características; aumentará a eficiência computacional, enquanto preserva características; ajuda na generalização e, consequentemente, previne o \textit{overfitting}. 
-
-Por fim, a etapa chamada de \textit{flattening} acontece. Ela irá transformar a matriz bidimensional resultante da etapa anterior em um vetor que será introduzido na camada de \textit{input} da rede neural.Após essa introdução, os valores serão processados em uma série de \textit{hidden layers}. Uma \textit{hidden layer} opera sobre as características resultantes da camada anterior, ou seja, quanto mais se aprofunda na rede, maior será a complexidade das características processadas pelas camadas \cite{lecun1998gradient}.
-
-
-
-
-\section{Classificação}
 Com o modelo para identificar oócitos treinado, tornou-se possível desenvolver a etapa de classificação. Pode-se averiguar o funcionamento de modelo de identificação na Figura \ref{fig:entradaEsaida}
 
 \begin{figure}[H]
@@ -117,58 +101,16 @@ Com o modelo para identificar oócitos treinado, tornou-se possível desenvolver
 	\label{fig:entradaEsaida}
 \end{figure}
 
-Para que esse modelo pudesse ser treinamento corretamente, foi utilizada uma porporção de 80\% da base de dados para treinamento e 20\% para validação, que é uma divisão padrão. 
-
-Após a finalização dessa etapa, tornou-se necessário avaliar a eficiência do modelo de identificação. Com esse intuito, o Detectron2 utiliza o método \textit{COCOEvaluator}. Dessa forma, a \autoref{tab:metricas_ap} demonstra a saída da avaliação gerada por esse método.
-
-% Definições de cores (certifique-se de que estão no PREÂMBULO ou antes da tabela)
-\definecolor{mediumgray}{gray}{0.75}  % Cinza mediano
-\definecolor{lightgray}{gray}{0.9}    % Cinza claro
-
-\begin{table}[!htbp]
-	\footnotesize
-	\centering
-	\caption{Métricas de Precisão Média (Average Precision - AP) do COCOEvaluator.}
-	
-	% As colunas l X X X definem a estrutura da tabela
-	\begin{tabularx}{\textwidth}{l X X X}
-		\hline
-		\rowcolor{mediumgray}
-		\textbf{Métrica} & \textbf{Descrição} & \textbf{Caixas Delimitadoras} & \textbf{Segmentação} \\ 
-		\hline
-		
-		\rowcolor{lightgray}
-		$\text{AP}$ & AP Principal ($\text{IoU}=0.50$ a $0.95$, média) & $\mathbf{80.974\%}$ & $\mathbf{78.405\%}$ \\
-		
-		\rowcolor{white}
-		$\text{AP}^{50}$ & AP com $\text{IoU} \ge 0.50$ (Detecção "fácil") & $97.783\%$ & $97.783\%$ \\
-		
-		\rowcolor{lightgray}
-		$\text{AP}^{75}$ & AP com $\text{IoU} \ge 0.75$ (Detecção "rigorosa") & $96.033\%$ & $94.945\%$ \\
-		
-		
-		\rowcolor{white}
-		$\text{AP}_M$ & AP para objetos médios & $81.938\%$ & $79.493\%$ \\
-		
-		\rowcolor{lightgray}
-		$\text{AP}_L$ & AP para objetos grandes & $81.022\%$ & $78.314\%$ \\
-		\hline
-	\end{tabularx}
-	\caption*{Fonte: Elaboração Própria.}
-	\label{tab:metricas_ap}
-\end{table}
-
-Primeiramente, é preciso explicar os termos da tabela para compreênde-la adequadamente. Dessa forma, \textit{Insertection over Union} (Iou), que é a base para todas as medidas, serve para calcular a proporção entre a área de intersecção e a área da união entre o espaço previsto pelo modelo e a anotação real feita no pré-processamento. Portanto, o resultado ideal para essa proporção é 1.0 e quanto mais perto desse valor, melhor. Isso acontece porque um resultado de 1.0 indica que a área prevista está exatamente onde a anotação foi feita. Essa fórmula pode ser visualizada na Figura \ref{fig:formula}.
+Para que esse modelo pudesse ser treinamento corretamente, foi utilizada uma proporção de 80\% da base de dados para treinamento e 20\% para validação, que é uma divisão padrão.
 
 
-\begin{figure}[H]
-	\centering
-	\caption{Fórmula d IoU}
-	\includegraphics[width=0.8\textwidth]{images/ia/formula.png}
-	\caption*{\textbf{Fonte: \citeonline{rosebrock2016iou}.}} 
-	\label{fig:formula}
-\end{figure}
 
-Além do mais, as caixas delimitadoras definem o quão bem o modelo consegue desenhar um retângulo ao redor do oócito, enquanto a segmentação verifica o quão bem o modelo desenha uma máscara nos contornos exatos do oócito, ou seja, \textit{pixel} por \textit{pixel}. E, por fim, \textit{Average Precision} (AP), é simplesmente o resultado médio realizado a partir de vários valores diferentes de IoU. 
+Após a finalização dessa etapa, tornou-se necessário avaliar a eficiência do modelo de identificação. Com esse intuito, o Detectron2 utiliza o método \textit{COCOEvaluator}.
+
+
+\section{Construção do Modelo de Classificação}
+
+
+ 
 
 

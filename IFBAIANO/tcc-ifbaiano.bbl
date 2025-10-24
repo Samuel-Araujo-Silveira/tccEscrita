@@ -51,19 +51,6 @@ Acessado em: 15 ago. 2024.}
   Inc., 2008.
 ISBN 9780596554040.}
 
-\bibitem[{BRASIL. Ministério da Agricultura e Pecuária}
-  2025]{brasil:pecuaria:2025}
-\abntrefinfo{{BRASIL. Ministério da Agricultura e Pecuária}}{{BRASIL.
-  Ministério da Agricultura e Pecuária}}{2025}
-{{BRASIL. Ministério da Agricultura e Pecuária}. \textbf{Pecuária brasileira
-  cresce com sustentabilidade e lidera exportações mundiais}. Brasília,
-  2025.
-Disponível em:
-  \url{https://www.gov.br/agricultura/pt-br/assuntos/noticias/pecuaria-brasileira-cresce-com-sustentabilidade-e-lidera-exportacoes-mundiais#:~:text=As%20a%C3%A7%C3%B5es%20de%20fomento%20e,foram%20exportados%20US$%2022\%2C5\%20bilh\%C3\%B5es.}.
-  Acesso em: 23 out. 2025.
-Dispon{\'\i}vel em:
-  \url{https://www.gov.br/agricultura/pt-br/assuntos/noticias/pecuaria-brasileira-cresce-com-sustentabilidade-e-lidera-exportacoes-mundiais\#:~:text=As\%20a\%C3\%A7\%C3\%B5es\%20de\%20fomento\%20e,foram\%20exportados\%20US$\%2022\\%2C5\\%20bilh\\%C3\\%B5es.}}
-
 \bibitem[Camargo e Pereira 2022]{Camargo2022}
 \abntrefinfo{Camargo e Pereira}{Camargo; Pereira}{2022}
 {CAMARGO, L.~S. de A.; PEREIRA, J.~F. Genome-editing opportunities to enhance
@@ -156,12 +143,13 @@ ISBN 8576054019.}
 {HAYKIN, S. \textbf{Redes Neurais: Princípios e Prática}. [\textit{S.l.:
   s.n.}]: Bookman Editora, 2001.}
 
-\bibitem[Honda 2020]{HONDA2020}
-\abntrefinfo{Honda}{Honda}{2020}
-{HONDA, H. \textbf{Digging into {Detectron} 2 — part 1}. 2020.
-[S. l.].
+\bibitem[Henrique 2024]{henrique2024processamento}
+\abntrefinfo{Henrique}{Henrique}{2024}
+{HENRIQUE, G. \textbf{Processamento de Dados: como funciona e para quê serve?}
+  [S. l.], 2024.
+Acesso em: 23 out. 2025.
 Dispon{\'\i}vel em:
-  \url{https://medium.com/@hirotoschwert/digging-into-detectron-2-47b2e794fabd}.}
+  \url{https://faculdade.grancursosonline.com.br/blog/processamento-de-dados/}.}
 
 \bibitem[{IBM} 2024]{IBM2024}
 \abntrefinfo{{IBM}}{{IBM}}{2024}
@@ -182,6 +170,14 @@ ISBN 0-07-032018-7.}
   Barcelona; Hong Kong; London; Milan; Paris; Tokyo: Springer, 2002.
   (Engineering Online Library).
 ISBN 3-540-67754-2.}
+
+\bibitem[KASHYAP 2024]{kashyap2024precision}
+\abntrefinfo{KASHYAP}{KASHYAP}{2024}
+{KASHYAP, P. \textbf{Understanding Precision, Recall, and F1 Score Metrics}.
+  2024.
+[S. l.], 2 dez. 2024.
+Dispon{\'\i}vel em:
+  \url{https://medium.com/@piyushkashyap045/understanding-precision-recall-and-f1-score-metrics-ea219b908093}.}
 
 \bibitem[Krig 2014]{KRIG2014}
 \abntrefinfo{Krig}{Krig}{2014}
@@ -243,13 +239,6 @@ Dispon{\'\i}vel em:
 \textbf{CABI Agriculture and Bioscience}, v.~3, p.~13, 2022.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1186/s43170-022-00080-z}.}
 
-\bibitem[Nan, Hsieh e Chen 2023]{nan2023coral}
-\abntrefinfo{Nan, Hsieh e Chen}{Nan; Hsieh; Chen}{2023}
-{NAN, F.-H.; HSIEH, Y.-Z.; CHEN, H.-C. Coral detection with machine learning.
-  \textit{In}:  IEEE. \textbf{2023 5th International Conference on Computer
-  Communication and the Internet (ICCCI)}. [\textit{S.l.: s.n.}], 2023. p.
-  207--209.}
-
 \bibitem[Netto e Gomes 2021]{NettoGomes2021}
 \abntrefinfo{Netto e Gomes}{Netto; Gomes}{2021}
 {NETTO, V.~N.; GOMES, A.~T. \textbf{Importância Econômica e Social}. 2021.
@@ -291,14 +280,6 @@ Dispon{\'\i}vel em:
 {OPENCV. \textbf{About}. 2024.
 Acesso em: 14 ago. 2024.
 Dispon{\'\i}vel em: \url{https://opencv.org/about/}.}
-
-\bibitem[Rosebrock 2016]{rosebrock2016iou}
-\abntrefinfo{Rosebrock}{Rosebrock}{2016}
-{ROSEBROCK, A. \textbf{Intersection over Union (IoU) for object detection}.
-  2016.
-Acesso em: 20 out. 2025.
-Dispon{\'\i}vel em:
-  \url{https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/}.}
 
 \bibitem[Russell, Torralba, Murphy e Freeman 2008]{russell2008labelme}
 \abntrefinfo{Russell, Torralba, Murphy e Freeman}{Russell; Torralba; Murphy;
@@ -351,6 +332,12 @@ Dispon{\'\i}vel em:
 ISBN 978-0-12-821379-7.
 Dispon{\'\i}vel em:
   \url{https://www.sciencedirect.com/science/article/pii/B9780128213797000035}.}
+
+\bibitem[Teixeira e Hespanhol 2014]{teixeira2014trajetoria}
+\abntrefinfo{Teixeira e Hespanhol}{Teixeira; Hespanhol}{2014}
+{TEIXEIRA, J.~C.; HESPANHOL, A.~N. A trajet{\'o}ria da pecu{\'a}ria bovina
+  brasileira.
+\textbf{Caderno Prudentino de Geografia}, v.~2, n.~36, p. 26--38, 2014.}
 
 \bibitem[Vargas, Paes e Vasconcelos 2016]{VARGAS2016}
 \abntrefinfo{Vargas, Paes e Vasconcelos}{Vargas; Paes; Vasconcelos}{2016}
