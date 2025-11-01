@@ -47,23 +47,13 @@ Para ajustes na iluminação, utilizou-se filtros de gradiente e equalizações 
 Por fim, houve a necessidade de realizar ajustes relacionados ao foco de determinadas regiões da imagem captada. Por exemplo: se alguma região de interesse estiver desfocada ou se alguma região irrelevante estiver com muito foco, ambas essas situações precisarão ser reajustadas para que o processamento ocorra adequadamente \cite{KRIG2014}. 
 
 \subsection{LabelMe}
-O \textit{LabelMe} também apresentou-se como uma eficiente tecnologia para pré-processamento tendo em vista sua praticidade em carregar \textit{datasets}, opção para desenhar os círculos nas imagens e geração dos JSONs que contém os dados pré-processados \cite{russell2008labelme}. 
+O \textit{LabelMe} foi utilizado para rotulação \cite{russell2008labelme}. Um círculo foi atribuído em cada oócito para fazer com que o aprendizado identificasse qual é o objeto de aprendizado. Logo depois, um JSON é gerado com todas as informações pertinentes da rotulação, no entanto, ainda foi necessário usar o comando \textit{labelme2coco}, que traduz o JSON gerado para o formato esperado pelo Detectron2. 
 
 
-Um exemplo de imagem pré-processada pode ser visualizado na Figura \ref{fig:imagempre}.
-
-
-\begin{figure}[H]
-	\centering
-	\caption{Imagem pré-processada}
-	\includegraphics[width=0.8\textwidth]{images/ia/imagempre.png}
-	\caption*{\textbf{Fonte: Elaboração Própria.}}
-	\label{fig:imagempre}
-\end{figure}
 
 
 \section{Construção do Modelo de Identificação}
-Com o conjunto de imagens completamente pré-processado, foi possível utilizar o Detectron2, que de acordo com \cite{Lad2024Detectron2}, é um \textit{framework} para diversos algoritmos de detecção de objetos e, entre eles, encontra-se o Mask R-CNN.  
+Com o conjunto de imagens completamente pré-processado e rotulado, foi possível utilizar o Detectron2, que de acordo com \cite{Lad2024Detectron2}, é um \textit{framework} para diversos algoritmos de detecção de objetos e, entre eles, encontra-se o Mask R-CNN.  
 
 Logo após, um modelo de aprendizado de máquina para identificar oócitos bovinos foi gerado com o Detectron2. A arquitetura desse modelo está representada na Figura \ref{fig:arquitetura}
 
@@ -109,8 +99,57 @@ Após a finalização dessa etapa, tornou-se necessário avaliar a eficiência d
 
 
 \section{Construção do Modelo de Classificação}
+Para a construção do modelo de classificação foi necessário isolar através de recortes os oócitos contidos nas imagens. Isso foi feito para facilitar o aprendizado das características específicas de cada tipo. Em seguida, a partir do VGG Image Annotator (VIA), 4 rótulos foram criados e todos os objetos de interesse isolados foram atribuídos à sua respectiva divisão. Nesse sentido, foi possível gerar um JSON no formato adequado para o Detectron2, algo que o VIA gera automaticamente . Entretanto, o algoritmo \textit{cocosplit.py} ainda foi importante para dividir o JSON gerado em outros dois JSONS: um para treinamento e outro para teste a partir da proporção de 80\% para 20\%. Para garantir que cada classe fosse bem representada nas duas divisões, o \textit{cocossplit.py} precisou ser modificado para realizar proporções inteligentes para cada classificação tendo em vista que seu código original não faz essa diferenciação. 
+
+Logo após, o modelo de aprendizado de máquina para classificação de oócitos bovinos foi construído. Sua arquitetura pode ser visualizada na Figura \ref{fig:arquitetura2}
+
+\begin{figure}[H]
+	\centering
+	\caption{Arquitetura do Modelo de Aprendizado de Máquina para Classificação de Oócitos}
+	\includegraphics[width=0.8\textwidth]{images/ia/arquitetura6.png}
+	\caption*{\textbf{Fonte: Elaboração Própria.}} 
+	\label{fig:arquitetura2}
+\end{figure}
+
+Como está representado na imagem, o oócito isolado foi processado por uma série de camada convolucionais na etapa de \textit{backbone}. Esse processo extrai mapas de características da classificação.
+
+Em seguida, as informações pertinentes são extraídas pelo \textit{backbone} são processados pela \textit{Feature Pyramid Network} (FPN). Essa etapa combina mapas de características de diferentes resoluções. Isso serve para melhorar a capacidade do modelo em detectar objetos de tamanhos variados.
+
+Após a extração e combinação das características, os mapas gerados pela FPN são enviados à Region Proposal Network (RPN). Ela serve para gerar regiões com probabilidade de obter objetos de interesse, ou seja, oócitos bovinos de determinada classificação. Além do mais, ela analisa as áreas de interesse e ajusta as coordenadas das (\textit{bounding boxes}).
+
+Antes das regiões propostas serem enviadas para as etapas de \textit{bounding box regressor} e \textit{box classifier}, há um procedimento intermediário executado pelo \textit{ROI Align}, que serve para reginar as coordenadas que classificam os oócitos.
+
+Logo após, a \textit{bounding box regressor} realiza a atribuição de rótulos de classificação aos oócitos com determinadas características e refina ainda mais as coordenadas. 
+
+A partir da finalização desse processo, o modelo é capaz de produzir três tipos de resultados: a classificação de cada objeto de interesse, as caixas delimitadoras e as máscaras de segmentação, que contornam cada pixel da instância.
+
+Com o modelo treinado, cada oócito isolado passou a ser classificado. Pode-se visualizar essa etapa na Figura \ref{fig:visualizacao}
+
+\begin{figure}[H]
+	\centering
+	\caption{Demonstração da classificação de um oócito bovino}
+	\includegraphics[width=0.8\textwidth]{images/ia/visualizacao.png}
+	\caption*{\textbf{Fonte: Elaboração Própria.}} 
+	\label{fig:visualizacao}
+\end{figure}
 
 
  \section{Modelo Final}
+ Após o treinamento dos dois modelos, tornou-se necessário desenvolver um algoritmo através da linguagem de programação \textit{Python} que une as funcionalidades de identificação e classificão. Primeiramente, ele carrega as funções pertinentes dos dois modelos que estão nos segunuintes arquivos: model\_final\_identificacao.pth, config\_identifacao.yaml, model\_final\_classificacao.pth e config\_classificacao.yaml.
+ 
+ A partir desses dados, foi desenvolvida uma função que analisa toas as imagens dentro um diretório nominado de \textit{input} e utiliza o modelo de identificação para recortar os oócitos de imagens que possuem vários objetos de interesse. Logo após, as imagens de cada oócito isolado são armazenadas em uma pasta chamada de intermédio. Com isso, outra função é chamada para classificar cada instância e, no fim do processo, diretórios referentes a cada classificação são criados dentro de uma pasta chamada de \textit{output}. Em seguida, cada óocito classificado é armazenado de acordo com seu diretório. 
+ 
+Todo esse processo pode ser visualizado na Figura \ref{fig:modeloFinal}
+
+\begin{figure}[H]
+	\centering
+	\caption{Demonstração do funcionamento do Modelo Final}
+	\includegraphics[width=0.8\textwidth]{images/ia/modeloFinal.png}
+	\caption*{\textbf{Fonte: Elaboração Própria.}} 
+	\label{fig:modeloFinal}
+\end{figure}
+
+ 
+ 
 
 
