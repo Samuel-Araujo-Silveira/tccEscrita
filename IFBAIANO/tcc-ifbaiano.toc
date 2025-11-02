@@ -45,15 +45,16 @@
 \contentsline {section}{\numberline {5.4}Construção do Modelo de Classificação}{35}{section.5.4}%
 \contentsline {section}{\numberline {5.5}Modelo Final}{37}{section.5.5}%
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Resultados e Discussão}}{39}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Avaliação do Modelo de Identificação e de Classificação}{39}{section.6.1}%
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Conclusão}}{42}{chapter.7}%
+\contentsline {section}{\numberline {6.1}Avaliação do Modelo de Identificação}{39}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Avaliação do Modelo de Classificação}{41}{section.6.2}%
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Conclusão}}{43}{chapter.7}%
 \vspace {\cftbeforechapterskip }
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{43}{section*.33}%
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{44}{section*.31}%
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Título do Apêndice A}}{47}{appendix.A}%
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Título do Apêndice B}}{48}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Título do Apêndice A}}{48}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Título do Apêndice B}}{49}{appendix.B}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Título do Anexo A}}{49}{appendix.anexochapback.1}%
-\contentsline {section}{\numberline {A.1}CONFIGURAÇÕES DE PDF}{49}{section.anexochapback.1.1}%
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Título do Anexo B}}{50}{appendix.anexochapback.2}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Título do Anexo A}}{50}{appendix.anexochapback.1}%
+\contentsline {section}{\numberline {A.1}CONFIGURAÇÕES DE PDF}{50}{section.anexochapback.1.1}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Título do Anexo B}}{51}{appendix.anexochapback.2}%
