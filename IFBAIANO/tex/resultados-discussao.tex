@@ -1,6 +1,165 @@
+Este tópico abordará os testes realizados nos modelos de aprendizado de máquina para identificação e classificação de oócitos bovinos.
+\section{Avaliação do Modelo de Identificação e de Classificação}
 
-\section{Título I}
 
-\subsection{Sub-Título I}
+A \autoref{tab:metricas_ap} demonstra as informações geradas por esse método.
 
-\subsection{Sub-Título II}
+% Definições de cores (certifique-se de que estão no PREÂMBULO ou antes da tabela)
+\definecolor{mediumgray}{gray}{0.75}  % Cinza mediano
+\definecolor{lightgray}{gray}{0.9}    % Cinza claro
+
+\begin{table}[!htbp]
+	\footnotesize
+	\centering
+	\caption{Métricas de Precisão Média (Average Precision - AP) do COCOEvaluator.}
+	
+	% As colunas l X X X definem a estrutura da tabela
+	\begin{tabularx}{\textwidth}{l X X X}
+		\hline
+		\rowcolor{mediumgray}
+		\textbf{Métrica} & \textbf{Descrição} & \textbf{Caixas Delimitadoras} & \textbf{Segmentação} \\ 
+		\hline
+		
+		\rowcolor{lightgray}
+		$\text{AP}$ & AP Principal ($\text{IoU}=0.50$ a $0.95$, média) & $\mathbf{80.974\%}$ & $\mathbf{78.405\%}$ \\
+		
+		\rowcolor{white}
+		$\text{AP}^{50}$ & AP com $\text{IoU} \ge 0.50$ (Detecção "fácil") & $97.783\%$ & $97.783\%$ \\
+		
+		\rowcolor{lightgray}
+		$\text{AP}^{75}$ & AP com $\text{IoU} \ge 0.75$ (Detecção "rigorosa") & $96.033\%$ & $94.945\%$ \\
+		
+		
+		\rowcolor{white}
+		$\text{AP}_M$ & AP para objetos médios & $81.938\%$ & $79.493\%$ \\
+		
+		\rowcolor{lightgray}
+		$\text{AP}_L$ & AP para objetos grandes & $81.022\%$ & $78.314\%$ \\
+		\hline
+	\end{tabularx}
+	\caption*{Fonte: Elaboração Própria.}
+	\label{tab:metricas_ap}
+\end{table}
+
+% Definição de Cores
+\definecolor{mediumgray}{gray}{0.75} % Cinza mediano
+\definecolor{lightgray}{gray}{0.9}   % Cinza claro
+
+	
+	\begin{table}[!htbp]
+		\footnotesize
+		\centering
+		\caption{Métricas de Precisão Média por Categoria (Average Precision - AP) do Modelo de 4 Classes.}
+		
+		% Definição de colunas: l para Categoria, X para as métricas (largura automática)
+		\begin{tabularx}{\linewidth}{l X X l}
+			\hline
+			\rowcolor{mediumgray}
+			\textbf{Categoria} & \textbf{Detecção (bbox AP)} & \textbf{Segmentação (segm AP)} & \textbf{Status de Desempenho} \\ 
+			\hline
+			
+			\rowcolor{white}
+			$\text{class1}$ & $90.136\%$ & $94.279\%$ & Excelente \\
+			
+			\rowcolor{lightgray}
+			$\text{class2}$ & $90.000\%$ & $97.511\%$ & Excelente \\
+			
+			\rowcolor{white}
+			$\text{class3}$ & $85.545\%$ & $91.122\%$ & Muito Bom \\
+			
+			\rowcolor{lightgray}
+			$\text{class4}$ & $86.832\%$ & $94.059\%$ & Muito Bom \\
+			\hline
+		\end{tabularx}
+		\caption*{Fonte: Elaboração Própria (Baseado nos resultados do COCOEvaluator).}
+		\label{tab:metricas_ap_por_categoria}
+	\end{table}
+	
+	\definecolor{mediumgray}{gray}{0.75} % Cinza mediano
+	\definecolor{lightgray}{gray}{0.9}   % Cinza claro
+	
+	\begin{table}[!htbp]
+		\footnotesize
+		\centering
+		\caption{Métricas Globais de Precisão Média (Average Precision - AP) do Modelo de 4 Classes.}
+		
+		% As colunas l X X X definem a estrutura da tabela
+		\begin{tabularx}{\textwidth}{l X X X}
+			\hline
+			\rowcolor{mediumgray}
+			\textbf{Métrica} & \textbf{Descrição} & \textbf{Detecção (bbox AP)} & \textbf{Segmentação (segm AP)} \\ 
+			\hline
+			
+			\rowcolor{white}
+			$\text{AP}$ & AP Principal ($\text{IoU}=0.50$ a $0.95$) & $\mathbf{88.128\%}$ & $\mathbf{94.243\%}$ \\
+			
+			\rowcolor{lightgray}
+			$\text{AP}^{50}$ & AP com $\text{IoU} \ge 0.50$ (Detecção "Fácil") & $100.000\%$ & $100.000\%$ \\
+			
+			\rowcolor{white}
+			$\text{AP}^{75}$ & AP com $\text{IoU} \ge 0.75$ (Detecção "Rigorosa") & $100.000\%$ & $100.000\%$ \\
+			
+			\rowcolor{lightgray}
+			$\text{AP}_S$ & AP para objetos pequenos ($\text{Area} < 32^2$) & $90.000\%$ & $100.000\%$ \\
+			
+			\rowcolor{white}
+			$\text{AP}_M$ & AP para objetos médios ($32^2 < \text{Area} < 96^2$) & $88.762\%$ & $92.673\%$ \\
+			
+			\rowcolor{lightgray}
+			$\text{AP}_L$ & AP para objetos grandes ($\text{Area} > 96^2$) & $88.960\%$ & $95.384\%$ \\
+			\hline
+		\end{tabularx}
+		\caption*{Fonte: Elaboração Própria (Baseado nos resultados do COCOEvaluator).}
+		\label{tab:metricas_globais_ap}
+	\end{table}
+	
+	\definecolor{mediumgray}{gray}{0.75} % Cinza mediano
+	\definecolor{lightgray}{gray}{0.9}   % Cinza claro
+	
+	\begin{table}[!htbp]
+		\footnotesize
+		\centering
+		\caption{Métricas Globais de Precisão Média (Average Precision - AP) do Modelo Regularizado (v2).}
+		
+		% As colunas l X X X definem a estrutura da tabela
+		\begin{tabularx}{\textwidth}{l X X X}
+			\hline
+			\rowcolor{mediumgray}
+			\textbf{Métrica} & \textbf{Descrição} & \textbf{Detecção (bbox AP)} & \textbf{Segmentação (segm AP)} \\ 
+			\hline
+			
+			\rowcolor{white}
+			$\text{AP}$ & AP Principal ($\text{IoU}=0.50$ a $0.95$) & $\mathbf{87.080\%}$ & $\mathbf{94.528\%}$ \\
+			
+			\rowcolor{lightgray}
+			$\text{AP}^{50}$ & AP com $\text{IoU} \ge 0.50$ (Detecção "Fácil") & $100.000\%$ & $100.000\%$ \\
+			
+			\rowcolor{white}
+			$\text{AP}^{75}$ & AP com $\text{IoU} \ge 0.75$ (Detecção "Rigorosa") & $100.000\%$ & $100.000\%$ \\
+			
+			\rowcolor{lightgray}
+			$\text{AP}_S$ & AP para objetos pequenos ($\text{Area} < 32^2$) & $90.000\%$ & $100.000\%$ \\
+			
+			\rowcolor{white}
+			$\text{AP}_M$ & AP para objetos médios ($32^2 < \text{Area} < 96^2$) & $86.246\%$ & $93.630\%$ \\
+			
+			\rowcolor{lightgray}
+			$\text{AP}_L$ & AP para objetos grandes ($\text{Area} > 96^2$) & $87.739\%$ & $95.287\%$ \\
+			\hline
+		\end{tabularx}
+		\caption*{Fonte: Elaboração Própria (Baseado nos resultados do COCOEvaluator).}
+		\label{tab:metricas_globais_ap_novo}
+	\end{table}
+
+Primeiramente, é preciso explicar os termos da tabela para compreênde-la adequadamente. Dessa forma, \textit{Insertection over Union} (Iou), que é a base para todas as medidas, serve para calcular a proporção entre a área de intersecção e a área da união entre o espaço previsto pelo modelo e a anotação real feita no pré-processamento. Portanto, o resultado ideal para essa proporção é 1.0 e quanto mais perto desse valor, melhor. Isso acontece porque um resultado de 1.0 indica que a área prevista está exatamente onde a anotação foi feita. Essa fórmula pode ser visualizada na Figura \ref{fig:formula}.
+
+
+\begin{figure}[H]
+	\centering
+	\caption{Fórmula d IoU}
+	\includegraphics[width=0.8\textwidth]{images/ia/formula.png}
+	\caption*{\textbf{Fonte: \citeonline{rosebrock2016iou}.}} 
+	\label{fig:formula}
+\end{figure}
+
+Além do mais, as caixas delimitadoras definem o quão bem o modelo consegue desenhar um retângulo ao redor do oócito, enquanto a segmentação verifica o quão bem o modelo desenha uma máscara nos contornos exatos do oócito, ou seja, \textit{pixel} por \textit{pixel}. E, por fim, \textit{Average Precision} (AP), é simplesmente o resultado médio realizado a partir de vários valores diferentes de IoU. 

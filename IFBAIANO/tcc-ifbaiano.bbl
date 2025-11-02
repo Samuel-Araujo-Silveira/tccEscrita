@@ -281,6 +281,14 @@ Dispon{\'\i}vel em:
 Acesso em: 14 ago. 2024.
 Dispon{\'\i}vel em: \url{https://opencv.org/about/}.}
 
+\bibitem[Rosebrock 2016]{rosebrock2016iou}
+\abntrefinfo{Rosebrock}{Rosebrock}{2016}
+{ROSEBROCK, A. \textbf{Intersection over Union (IoU) for object detection}.
+  2016.
+Acesso em: 20 out. 2025.
+Dispon{\'\i}vel em:
+  \url{https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/}.}
+
 \bibitem[Russell, Torralba, Murphy e Freeman 2008]{russell2008labelme}
 \abntrefinfo{Russell, Torralba, Murphy e Freeman}{Russell; Torralba; Murphy;
   Freeman}{2008}

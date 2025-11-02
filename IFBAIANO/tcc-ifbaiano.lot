@@ -11,3 +11,7 @@
 \babel@toc {brazil}{}\relax
 \babel@toc {english}{}\relax
 \babel@toc {brazil}{}\relax
+\contentsline {table}{\numberline {1}{\ignorespaces Métricas de Precisão Média (Average Precision - AP) do COCOEvaluator.}}{39}{table.caption.26}%
+\contentsline {table}{\numberline {2}{\ignorespaces Métricas de Precisão Média por Categoria (Average Precision - AP) do Modelo de 4 Classes.}}{39}{table.caption.27}%
+\contentsline {table}{\numberline {3}{\ignorespaces Métricas Globais de Precisão Média (Average Precision - AP) do Modelo de 4 Classes.}}{40}{table.caption.28}%
+\contentsline {table}{\numberline {4}{\ignorespaces Métricas Globais de Precisão Média (Average Precision - AP) do Modelo Regularizado (v2).}}{40}{table.caption.29}%
