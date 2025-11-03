@@ -5,11 +5,11 @@
 
 Neste capítulo, serão apresentadas todas as ferramentas e os procedimentos utilizados para a construção do modelo computacional de reconhecimento e classificação oócitos bovinos.
 
-Primeiramente, os oócitos foram visualizados através de instrumentos de aproximação por conta de seu tamanho microscópico e as suas imagens foram capturadas e armazenadas. Em seguida, as imagens captadas são pré-processadas para a retirada de ruídos e padronização de camadas; processadas em uma rede neural para reconhecer as regiões onde se encontram os oócitos; construção do modelo para classificá-los; e, finalmente, um modelo final que une essas duas funcionalidades. Esse processo pode ser visualizado na figura \ref{fig:processo} e será descrito com mais detalhes nas seções seguintes.
+No modelo proposto, os oócitos são visualizados através de instrumentos de aproximação por conta de seu tamanho microscópico e as suas imagens são capturadas e armazenadas. Em seguida, as imagens captadas são pré-processadas para a retirada de ruídos e padronização de camadas; processadas em uma rede neural para reconhecer as regiões onde se encontram os oócitos; construção do modelo para classificá-los; e, finalmente, um modelo final que une essas duas funcionalidades. Esse processo pode ser visualizado na figura \ref{fig:processo} e será descrito com mais detalhes nas seções seguintes.
 
 \begin{figure}[H]
 	\centering
-	\caption{Demonstração das Etapas de Construção do Modelo}
+	\caption{Esquema de funcionamento do modelo proposto}
 	\includegraphics[width=0.9\textwidth]{images/ia/processo6.png}
 	\caption*{\textbf{Fonte: Elaboração própria}}
 	\label{fig:processo}
@@ -38,16 +38,16 @@ Nessa seção, todas as etapas necessárias para preparar as condições mínica
 \subsection{OpenCV}
 O pré-processamento consiste em corrigir aspectos ruidosos nas imagens, tais como: sujeiras, áreas ofuscadas, dentre outros. Essas correções podem ser radiométricas ou geométricas \cite{CHAKI2019} e são realizadas através da biblioteca OpenCV e seus métodos.
 
-Algumas imagens passaram por uma correção radiométrica \cite{CHAKI2019}. Esse tipo de problema surge quando há um mal posicionamento do objeto capturado diante da luz ou falta de calibração adequada nos sensores. Isso faz com que alguns \textit{pixels} da imagem não sejam constituídos, ou seja, será necessário reconstituí-los de forma artificial através dos \textit{pixels} mais próximos como referência \cite{CHAKI2019}. Para tratar esse tipo de problema, os fundamentos utilizados são equalização de histograma e conversão de espaço de cores\ \cite{his} . 
+Algumas imagens passaram por uma correção radiométrica \cite{CHAKI2019}. Esse tipo de problema surge quando há um mal posicionamento do objeto capturado diante da luz ou falta de calibração adequada nos sensores. Isso faz com que alguns \textit{pixels} da imagem não sejam constituídos, ou seja, será necessário reconstituí-los de forma artificial através dos \textit{pixels} mais próximos como referência \cite{CHAKI2019}. Para tratar esse tipo de problema, os fundamentos utilizados são equalização de histograma e conversão de espaço de cores\ \cite{OPENCV2024} . 
 
-Houve também casos em que movimentos durante o processo de captura e/ou lentes distorcidas no dispositivo de captação ocasionam um posicionamento distorcido de determinados \textit{pixels} da imagem \cite{CHAKI2019}. Para resolver isso, foi necessário reposicionar os \textit{pixels} que foram desvirtuados através das técnicas de transformações geométrica da OpenCV, que são: correção de distorção de lente, transformação de perspectiva, e transformação afim \cite{geo}. 
+Houve também casos em que movimentos durante o processo de captura e/ou lentes distorcidas no dispositivo de captação ocasionam um posicionamento distorcido de determinados \textit{pixels} da imagem \cite{CHAKI2019}. Para resolver isso, foi necessário reposicionar os \textit{pixels} que foram desvirtuados através das técnicas de transformações geométrica da OpenCV, que são: correção de distorção de lente, transformação de perspectiva, e transformação afim \cite{OPENCV2024}. 
 
 Para ajustes na iluminação, utilizou-se filtros de gradiente e equalizações de histograma, que servem para calibrar a regularidade de intensidade de \textit{pixels} \cite{KRIG2014}. 
 
 Por fim, houve a necessidade de realizar ajustes relacionados ao foco de determinadas regiões da imagem captada. Por exemplo: se alguma região de interesse estiver desfocada ou se alguma região irrelevante estiver com muito foco, ambas essas situações precisarão ser reajustadas para que o processamento ocorra adequadamente \cite{KRIG2014}. 
 
 \subsection{LabelMe}
-O \textit{LabelMe} foi utilizado para rotulação \cite{russell2008labelme}. Um círculo foi atribuído em cada oócito para fazer com que o aprendizado identificasse qual é o objeto de aprendizado. Logo depois, um JSON é gerado com todas as informações pertinentes da rotulação, no entanto, ainda foi necessário usar o comando \textit{labelme2coco}, que traduz o JSON gerado para o formato esperado pelo Detectron2. 
+O \textit{LabelMe} foi utilizado para rotulação \cite{russell2008labelme}. Um círculo foi atribuído em cada oócito para fazer com que o aprendizado identificasse qual é o objeto de aprendizado. Logo depois, um JSON é gerado com todas as informações pertinentes da rotulação, no entanto, ainda foi necessário usar o comando \textit{labelme2coco}, que traduz o JSON gerado para o formato esperado pelo Detectron2, a CNN utilizada na tarefa de identificação das células e que falaremos mais na seção 5.3. 
 
 
 

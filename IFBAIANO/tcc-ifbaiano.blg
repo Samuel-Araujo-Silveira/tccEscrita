@@ -18,64 +18,67 @@ Warning--entry type for "kashyap2024precision" isn't style-file defined
 --line 11 of file references.bib
 Warning--entry type for "rosebrock2016iou" isn't style-file defined
 --line 84 of file references.bib
+I was expecting a `,' or a `}'---line 239 of file references.bib
+ :  
+ :  url = {https://docs.opencv.org/4.x/},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--entry type for "abdulla2018" isn't style-file defined
---line 568 of file references.bib
+--line 555 of file references.bib
 Warning--entry type for "Yenidun2025" isn't style-file defined
---line 606 of file references.bib
+--line 593 of file references.bib
 Warning--entry type for "kumar2025basiccnn" isn't style-file defined
---line 626 of file references.bib
+--line 613 of file references.bib
 Warning--entry type for "henrique2024processamento" isn't style-file defined
---line 1468 of file references.bib
+--line 1455 of file references.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Warning--campo year vazio ou faltando em geo
-Warning--campo year vazio ou faltando em his
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 65 entries,
+You've used 63 entries,
             6708 wiz_defined-function locations,
-            1557 strings with 19422 characters,
-and the built_in function-call counts, 75190 in all, are:
-= -- 8165
-> -- 1615
-< -- 1623
-+ -- 2214
-- -- 492
-* -- 4697
-:= -- 9173
-add.period$ -- 233
-call.type$ -- 68
-change.case$ -- 479
-chr.to.int$ -- 113
-cite$ -- 55
-duplicate$ -- 6780
-empty$ -- 3796
-format.name$ -- 2297
-if$ -- 15795
-int.to.chr$ -- 12
+            1548 strings with 19119 characters,
+and the built_in function-call counts, 70285 in all, are:
+= -- 7483
+> -- 1585
+< -- 1426
++ -- 2006
+- -- 482
+* -- 4437
+:= -- 8604
+add.period$ -- 223
+call.type$ -- 66
+change.case$ -- 466
+chr.to.int$ -- 112
+cite$ -- 51
+duplicate$ -- 6138
+empty$ -- 3690
+format.name$ -- 2251
+if$ -- 14915
+int.to.chr$ -- 11
 int.to.str$ -- 3
-missing$ -- 1112
-newline$ -- 286
-num.names$ -- 267
-pop$ -- 1364
+missing$ -- 1079
+newline$ -- 272
+num.names$ -- 257
+pop$ -- 1313
 preamble$ -- 1
-purify$ -- 233
+purify$ -- 227
 quote$ -- 0
-skip$ -- 7532
+skip$ -- 6882
 stack$ -- 1
-substring$ -- 2959
-swap$ -- 2551
-text.length$ -- 57
+substring$ -- 2743
+swap$ -- 2335
+text.length$ -- 54
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 3
-warning$ -- 2
-while$ -- 370
+warning$ -- 0
+while$ -- 357
 width$ -- 0
-write$ -- 842
-(There was 1 error message)
+write$ -- 812
+(There were 2 error messages)

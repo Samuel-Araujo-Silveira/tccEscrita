@@ -47,8 +47,8 @@ Acessado em: 15 ago. 2024.}
 
 \bibitem[Bradski e Kaehler 2008]{BRADSKI2008}
 \abntrefinfo{Bradski e Kaehler}{Bradski; Kaehler}{2008}
-{BRADSKI, G.; KAEHLER, A. \textbf{Learning OpenCV}. [S.l.]: O'Reilly Media,
-  Inc., 2008.
+{BRADSKI, G.; KAEHLER, A. \textbf{Learning}. [S.l.]: O'Reilly Media, Inc.,
+  2008.
 ISBN 9780596554040.}
 
 \bibitem[Camargo e Pereira 2022]{Camargo2022}
@@ -261,25 +261,9 @@ ISBN ISSN 1516-7453.}
   tropics: farm and farmers’ perspectives.
 \textbf{Animal}, Cambridge University Press, v.~8, n.~8, p. 1238--1248, 2014.}
 
-\bibitem[OpenCV]{geo}
-\abntrefinfo{OpenCV}{OpenCV}{a}
-{OPENCV. \textbf{Geometric Image Transformations}.
-Accessed: 2024-08-15.
-Dispon{\'\i}vel em:
-  \url{https://www.opencv.org.cn/opencvdoc/2.3.2/html/modules/imgproc/doc/geometric\_transformations.html\#}.}
-
-\bibitem[OpenCV]{his}
-\abntrefinfo{OpenCV}{OpenCV}{b}
-{OPENCV. \textbf{Histogram Equalization Tutorial}.
-Accessed: 2024-08-15.
-Dispon{\'\i}vel em:
-  \url{https://docs.opencv.org/3.4/d4/d1b/tutorial\_histogram\_equalization.html}.}
-
-\bibitem[OpenCV 2024]{OPENCV2024}
-\abntrefinfo{OpenCV}{OpenCV}{2024}
-{OPENCV. \textbf{About}. 2024.
-Acesso em: 14 ago. 2024.
-Dispon{\'\i}vel em: \url{https://opencv.org/about/}.}
+\bibitem[OpenCV 2025]{OPENCV2024}
+\abntrefinfo{OpenCV}{OpenCV}{2025}
+{OPENCV. \textbf{OpenCV modules}. 2025.}
 
 \bibitem[Rosebrock 2016]{rosebrock2016iou}
 \abntrefinfo{Rosebrock}{Rosebrock}{2016}

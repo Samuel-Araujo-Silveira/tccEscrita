@@ -35,7 +35,7 @@
 \contentsline {subsubsection}{\numberline {4.3.2.3}Segmentação de Instância}{28}{subsubsection.4.3.2.3}%
 \contentsline {subsubsection}{\numberline {4.3.2.4}R-CNN}{29}{subsubsection.4.3.2.4}%
 \contentsline {subsubsection}{\numberline {4.3.2.5}Mask R-CNN}{30}{subsubsection.4.3.2.5}%
-\contentsline {subsubsection}{\numberline {4.3.2.6}F1SCORE}{30}{subsubsection.4.3.2.6}%
+\contentsline {subsubsection}{\numberline {4.3.2.6}f1-score}{30}{subsubsection.4.3.2.6}%
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Metodologia}}{31}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Visualização e Coleta}{32}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Pré-processamento}{33}{section.5.2}%
@@ -50,11 +50,3 @@
 \contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Conclusão}}{43}{chapter.7}%
 \vspace {\cftbeforechapterskip }
 \contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{44}{section*.31}%
-\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Título do Apêndice A}}{48}{appendix.A}%
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Título do Apêndice B}}{49}{appendix.B}%
-\cftinsert {AAA}
-\renewcommand *{\cftappendixname }{ANEXO \space }
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Título do Anexo A}}{50}{appendix.anexochapback.1}%
-\contentsline {section}{\numberline {A.1}CONFIGURAÇÕES DE PDF}{50}{section.anexochapback.1.1}%
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Título do Anexo B}}{51}{appendix.anexochapback.2}%
