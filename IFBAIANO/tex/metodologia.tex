@@ -71,17 +71,21 @@ Essa rede é composta por três módulos principais:
 
 
 \begin{itemize}
-	\item \textbf{Backbone (ResNet + FPN)}: as imagens dos oócitos foram processadas e suas características, extraídas. A \textit{Feature Pyramid Network} (FPN) foi responsável por combinar informações em múltiplas escalas (fpnlateral2 – 5) com convoluções de 256 canais, algo que permitiu detectar oócitos de diferentes tamanhos e contrastes;
+	\item \textbf{Backbone (ResNet + FPN)}: as imagens dos oócitos foram processadas e suas características, extraídas. A \textit{Feature Pyramid Network} (FPN) foi responsável por combinar informações em múltiplas escalas (fpnlateral2 – 5) com convoluções de 256 canais;
 	
 	\item \textbf{\textit{Region Proposal Network} (RPN)}: aqui, regiões de interesse foram geradas através de probabiliades de cada região conter um objeto de interesse;
 	
 	\item \textbf{ROI Heads (Box Head e Mask Head)}: as propostas geradas na etapa anterior foram refinadas através de classificações e ajustes das caixas delimitadoras dos oócitos.
 	
+	\item \textbf{Conv2d}: são as camadas convolucionais cujos filtros varrem as imagens e procuram características;
+	
+	\item \textbf{Flatten}: uma camada do processo responsável por converter matrizes em vetores com o intuito de possibilitar a entrada dessas informações em camadas totalmente conectadas;
+	
 \end{itemize}
 
-Logo após, houve a construção do modelo de identificação com os conjuntos de nome \textit{oocitosTrain} e \textit{oocitosVal} configurados para 1 classe (oócito) e com 1000 iterações.
+Baseado nessa arquitetura, houve a construção do modelo de identificação com os conjuntos de nome \textit{oocitosTrain} e \textit{oocitosVal} que servem, respectivamente, para treinar o modelo e validar o treinamento realizado com testes. Eles foram configurados para 1 classe (oócito) e com 1000 iterações.
 
-Com o modelo para identificar oócitos treinado, tornou-se possível desenvolver a etapa de classificação. Pode-se averiguar o funcionamento de modelo de identificação na Figura \ref{fig:entradaEsaida}
+Com o modelo para identificar oócitos treinado, o próximo passo é desenvolver a etapa de classificação. Pode-se averiguar o funcionamento de modelo de identificação na Figura \ref{fig:entradaEsaida}
 
 \begin{figure}[H]
 	\centering
@@ -91,7 +95,7 @@ Com o modelo para identificar oócitos treinado, tornou-se possível desenvolver
 	\label{fig:entradaEsaida}
 \end{figure}
 
-Para que esse modelo pudesse ser treinamento corretamente, foi utilizada uma proporção de 80\% da base de dados para treinamento e 20\% para validação, que é uma divisão padrão.
+Para que esse modelo pudesse ser treinado e validado corretamente, foi utilizada uma proporção de 80\% da base de dados para treinamento e 20\% para validação, que é uma divisão padrão.
 
 
 
@@ -99,29 +103,31 @@ Após a finalização dessa etapa, tornou-se necessário avaliar a eficiência d
 
 
 \section{Construção do Modelo de Classificação}
-Para a construção do modelo de classificação foi necessário isolar através de recortes os oócitos contidos nas imagens. Isso foi feito para facilitar o aprendizado das características específicas de cada tipo. Em seguida, a partir do VGG Image Annotator (VIA), 4 rótulos foram criados e todos os objetos de interesse isolados foram atribuídos à sua respectiva divisão. Nesse sentido, foi possível gerar um JSON no formato adequado para o Detectron2, algo que o VIA gera automaticamente . Entretanto, o algoritmo \textit{cocosplit.py} ainda foi importante para dividir o JSON gerado em outros dois JSONS: um para treinamento e outro para teste a partir da proporção de 80\% para 20\%. Para garantir que cada classe fosse bem representada nas duas divisões, o \textit{cocossplit.py} precisou ser modificado para realizar proporções inteligentes para cada classificação tendo em vista que seu código original não faz essa diferenciação. 
+Para a construção do modelo de classificação foi necessário isolar através de recortes os oócitos contidos nas imagens. Isso foi feito para facilitar o aprendizado das características específicas de cada tipo. Em seguida, a partir do VGG Image Annotator\footnote{VGG Image Annotator é um \textit{software} para rotulação de imagens de \textit{datasets}}  (VIA), 4 rótulos foram criados e todos os objetos de interesse isolados foram atribuídos à sua respectiva divisão. Nesse sentido, foi possível gerar um JSON no formato adequado para o Detectron2, algo que o VIA gera automaticamente . Entretanto, o algoritmo \textit{cocosplit} ainda foi importante para dividir o JSON gerado em outros dois JSONs: um para treinamento e outro para teste a partir da proporção de 80\% para 20\%. Para garantir que cada classe fosse bem representada nas duas divisões, o \textit{cocossplit.py} precisou ser modificado para realizar proporções inteligentes para cada classificação tendo em vista que seu código original não faz essa diferenciação.
 
-Logo após, o modelo de aprendizado de máquina para classificação de oócitos bovinos foi construído. Sua arquitetura pode ser visualizada na Figura \ref{fig:arquitetura2}
+
+
+Com essas condições e características, o modelo de aprendizado de máquina para classificação de oócitos bovinos foi construído. Sua arquitetura pode ser visualizada na Figura \ref{fig:arquitetura2}
 
 \begin{figure}[H]
 	\centering
 	\caption{Arquitetura do Modelo de Aprendizado de Máquina para Classificação de Oócitos}
-	\includegraphics[width=0.8\textwidth]{images/ia/arquitetura6.png}
+	\includegraphics[width=0.8\textwidth]{images/ia/procedi2.png}
 	\caption*{\textbf{Fonte: Elaboração Própria.}} 
 	\label{fig:arquitetura2}
 \end{figure}
 
-Como está representado na imagem, o oócito isolado foi processado por uma série de camada convolucionais na etapa de \textit{backbone}. Esse processo extrai mapas de características da classificação.
+Como está representado na imagem, o oócito isolado foi processado por uma série de camada convolucionais na etapa de rede base de extração de características. Esse processo extrai mapas com informações pertinentes para a classificação.
 
-Em seguida, as informações pertinentes são extraídas pelo \textit{backbone} são processados pela \textit{Feature Pyramid Network} (FPN). Essa etapa combina mapas de características de diferentes resoluções. Isso serve para melhorar a capacidade do modelo em detectar objetos de tamanhos variados.
+Em seguida, essas informações são processados pela rede de pirâmide de características. Essa etapa combina mapas de características de diferentes resoluções. Isso serve para melhorar a capacidade do modelo em detectar objetos de tamanhos variados.
 
-Após a extração e combinação das características, os mapas gerados pela FPN são enviados à Region Proposal Network (RPN). Ela serve para gerar regiões com probabilidade de obter objetos de interesse, ou seja, oócitos bovinos de determinada classificação. Além do mais, ela analisa as áreas de interesse e ajusta as coordenadas das (\textit{bounding boxes}).
+Após a extração e combinação das características, os mapas gerados pela rede de pirâmide são enviados à rede propositora de regiões. Ela serve para gerar regiões com probabilidade de obter objetos de interesse, ou seja, oócitos bovinos de determinada classificação. Além do mais, ela analisa as áreas de interesse e ajusta as coordenadas das caixas delimitadoras.
 
-Antes das regiões propostas serem enviadas para as etapas de \textit{bounding box regressor} e \textit{box classifier}, há um procedimento intermediário executado pelo \textit{ROI Align}, que serve para reginar as coordenadas que classificam os oócitos.
+Antes das regiões propostas serem enviadas para as etapas de regressor de caixa delimitadora e classificador de caixa, há um procedimento intermediário executado pelo alinhamento de região de interesse, que serve para reajustar as coordenadas que classificam os oócitos.
 
-Logo após, a \textit{bounding box regressor} realiza a atribuição de rótulos de classificação aos oócitos com determinadas características e refina ainda mais as coordenadas. 
+Logo após,o regressor de caixa delimitadora realiza a atribuição de rótulos de classificação aos oócitos com determinadas características e refina ainda mais as coordenadas. 
 
-A partir da finalização desse processo, o modelo é capaz de produzir três tipos de resultados: a classificação de cada objeto de interesse, as caixas delimitadoras e as máscaras de segmentação, que contornam cada pixel da instância.
+A partir da finalização desse processo, o modelo através das caixas delimitadoras e máscaras de segmentação é capaz de produzir o resultado esperado: a classificação de cada objeto de interesse.
 
 Com o modelo treinado, cada oócito isolado passou a ser classificado. Pode-se visualizar essa etapa na Figura \ref{fig:visualizacao}
 
@@ -133,11 +139,26 @@ Com o modelo treinado, cada oócito isolado passou a ser classificado. Pode-se v
 	\label{fig:visualizacao}
 \end{figure}
 
+\subsection{Tentativas de Aprimoramento do Modelo de Classificação}
+
+Após o treinamento do modelo, tornou-se necessário aplicar algumas técnicas para aprimorá-lo por conta do problema de \textit{overfitting} que foi encontrado. Elas são:
+
+\begin{itemize}
+	\item \textbf{Aumento do \textit{Dataset}}: a primeira versão do modelo foi treinada com, em média, 16 oócitos para classificação. Esse valor foi escolhido porque a classificação 3 de oócitos, que foi a mais difícil de achar, continha apenas 16 oócitos em todo o \textit{dataset}, enquanto as outras classificações possuíam consideravelmente mais imagens. Como o \textit{overfitting} aconteceu, foi decidido alterar o balanceamento e utilizar o total de imagens que cada classe possuía para si;
+	
+	\item \textbf{Regularização L2}: a variável \textit{Weight Decay} presente na configuração do treinamento foi diminuída com o intuito de aumentar a generalização do aprendizado, tendo em vista que um grande valor torna o treinamento muito sensível para variações entre diferentes imagens de oócitos;
+	
+	\item \textbf{Regularização de Lote}: diminuir a variável \textit{BATCH\_SIZE\_PER\_IMAGE} força o treinamento a se adaptar para características mais amplas e combater a memorização das imagens de validação;
+	
+	\item \textbf{Otimização de Treinamento}: reduzir a variável \textit{BASE\_LR} serve pra estabilizar o aprendizado e diminuir a intensidade que o modelo se corrige durante o processo de treinamento;
+	
+	\item \textbf{Parada/Controle}: essa estratégia permite manipular a duração do treinamento. Ele verifica a partir de qual ponto o \textit{overfitting} começa através do monitoramento da variável AP e interrompe o treinamento assim que o problema de memorização começa.
+\end{itemize}
 
  \section{Modelo Final}
- Após o treinamento dos dois modelos, tornou-se necessário desenvolver um algoritmo através da linguagem de programação \textit{Python} que une as funcionalidades de identificação e classificão. Primeiramente, ele carrega as funções pertinentes dos dois modelos que estão nos segunuintes arquivos: model\_final\_identificacao.pth, config\_identifacao.yaml, model\_final\_classificacao.pth e config\_classificacao.yaml.
+ Após o treinamento dos dois modelos, tornou-se necessário desenvolver um algoritmo através da linguagem de programação \textit{Python} que une as funcionalidades de identificação e classificão. Primeiramente, ele carrega os arquivos dos próprios modelos e depois, carrega os arquivos que contém as estruturas de cada modelo.
  
- A partir desses dados, foi desenvolvida uma função que analisa toas as imagens dentro um diretório nominado de \textit{input} e utiliza o modelo de identificação para recortar os oócitos de imagens que possuem vários objetos de interesse. Logo após, as imagens de cada oócito isolado são armazenadas em uma pasta chamada de intermédio. Com isso, outra função é chamada para classificar cada instância e, no fim do processo, diretórios referentes a cada classificação são criados dentro de uma pasta chamada de \textit{output}. Em seguida, cada óocito classificado é armazenado de acordo com seu diretório. 
+ A partir desses dados, foi desenvolvida uma função que analisa todas as imagens dentro um diretório nominado de \textit{input} e utiliza o modelo de identificação para recortar os oócitos de imagens que possuem vários objetos de interesse. Logo após, as imagens de cada oócito isolado são armazenadas em uma pasta chamada de intermédio. Com isso, outra função é chamada para classificar cada instância e, no fim do processo, diretórios referentes a cada classificação são criados dentro de uma pasta chamada de \textit{output}. Em seguida, cada óocito classificado é armazenado de acordo com seu respectivo diretório. 
  
 Todo esse processo pode ser visualizado na Figura \ref{fig:modeloFinal}
 

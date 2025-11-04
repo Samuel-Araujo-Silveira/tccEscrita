@@ -77,6 +77,13 @@ ISBN 9781138339316.}
 {DEISENROTH, M.~P.; FAISAL, A.~A.; ONG, C.~S. \textbf{Mathematics for Machine
   Learning}. Cambridge, United Kingdom: Cambridge University Press, 2020.}
 
+\bibitem[{Detectron2} 2020]{detectron2}
+\abntrefinfo{{Detectron2}}{{Detectron2}}{2020}
+{{Detectron2}. \textbf{Welcome to detectron2's documentation!} 2020.
+Copyright 2019-2020.
+Dispon{\'\i}vel em:
+  \url{https://detectron2.readthedocs.io/en/latest/index.html}.}
+
 \bibitem[Elsevier 2024]{ELSEVIERcitoplasma}
 \abntrefinfo{Elsevier}{Elsevier}{2024}
 {ELSEVIER. \textbf{Citoplasma inferior do oócito secundário}. 2024.
@@ -170,14 +177,6 @@ ISBN 0-07-032018-7.}
   Barcelona; Hong Kong; London; Milan; Paris; Tokyo: Springer, 2002.
   (Engineering Online Library).
 ISBN 3-540-67754-2.}
-
-\bibitem[KASHYAP 2024]{kashyap2024precision}
-\abntrefinfo{KASHYAP}{KASHYAP}{2024}
-{KASHYAP, P. \textbf{Understanding Precision, Recall, and F1 Score Metrics}.
-  2024.
-[S. l.], 2 dez. 2024.
-Dispon{\'\i}vel em:
-  \url{https://medium.com/@piyushkashyap045/understanding-precision-recall-and-f1-score-metrics-ea219b908093}.}
 
 \bibitem[Krig 2014]{KRIG2014}
 \abntrefinfo{Krig}{Krig}{2014}
@@ -344,6 +343,12 @@ Dispon{\'\i}vel em:
   2025.
 Dispon{\'\i}vel em:
   \url{https://towardsdev.com/r-cnn-fast-r-cnn-faster-r-cnn-and-mask-r-cnn-e7cd2e6f0a82}.}
+
+\bibitem[Ying 2019]{ying2019overview}
+\abntrefinfo{Ying}{Ying}{2019}
+{YING, X. An overview of overfitting and its solutions. \textit{In}:  IOP
+  PUBLISHING. \textbf{Journal of physics: Conference series}. [\textit{S.l.:
+  s.n.}], 2019. v.~1168, p. 022022.}
 
 \bibitem[Zhang, Yang, Chen e Li 2018]{ZHANG2018146}
 \abntrefinfo{Zhang, Yang, Chen e Li}{Zhang; Yang; Chen; Li}{2018}

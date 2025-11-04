@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.23)  3 NOV 2025 19:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.23)  4 NOV 2025 02:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2479,7 +2479,7 @@ LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <17.28> not available
 
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 24.
-<images/oocitos.png, id=353, 813.0375pt x 813.0375pt>
+<images/oocitos.png, id=355, 813.0375pt x 813.0375pt>
 File: images/oocitos.png Graphic file (type png)
 <use images/oocitos.png>
 Package pdftex.def Info: images/oocitos.png  used on input line 34.
@@ -2489,7 +2489,7 @@ Package pdftex.def Info: images/oocitos.png  used on input line 34.
  [17] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
-<images/oocito/figura2.png, id=370, 813.0375pt x 813.0375pt>
+<images/oocito/figura2.png, id=372, 813.0375pt x 813.0375pt>
 File: images/oocito/figura2.png Graphic file (type png)
 <use images/oocito/figura2.png>
 Package pdftex.def Info: images/oocito/figura2.png  used on input line 47.
@@ -2500,7 +2500,7 @@ Package pdftex.def Info: images/oocito/figura2.png  used on input line 47.
 (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
-<images/oocito/figura3.png, id=380, 813.0375pt x 813.0375pt>
+<images/oocito/figura3.png, id=382, 813.0375pt x 813.0375pt>
 File: images/oocito/figura3.png Graphic file (type png)
 <use images/oocito/figura3.png>
 Package pdftex.def Info: images/oocito/figura3.png  used on input line 58.
@@ -2510,7 +2510,7 @@ Package pdftex.def Info: images/oocito/figura3.png  used on input line 58.
  [19 <./images/oocito/figura2.png>] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
-<images/oocito/figura04.png, id=389, 813.0375pt x 813.0375pt>
+<images/oocito/figura04.png, id=391, 813.0375pt x 813.0375pt>
 File: images/oocito/figura04.png Graphic file (type png)
 <use images/oocito/figura04.png>
 Package pdftex.def Info: images/oocito/figura04.png  used on input line 69.
@@ -2521,7 +2521,7 @@ Package pdftex.def Info: images/oocito/figura04.png  used on input line 69.
 [20 <./images/oocito/figura3.png>] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
-<images/oocito/figura5.png, id=398, 813.0375pt x 813.0375pt>
+<images/oocito/figura5.png, id=400, 813.0375pt x 813.0375pt>
 File: images/oocito/figura5.png Graphic file (type png)
 <use images/oocito/figura5.png>
 Package pdftex.def Info: images/oocito/figura5.png  used on input line 80.
@@ -2565,7 +2565,7 @@ Package pdftex.def Info: images/oocito/figura5.png  used on input line 80.
 
 \openout4 = `tcc-ifbaiano.mw'.
 
-<images/ia/figura6.png, id=478, 707.64375pt x 225.09094pt>
+<images/ia/figura6.png, id=480, 707.64375pt x 225.09094pt>
 File: images/ia/figura6.png Graphic file (type png)
 <use images/ia/figura6.png>
 Package pdftex.def Info: images/ia/figura6.png  used on input line 173.
@@ -2579,7 +2579,7 @@ Package pdftex.def Info: images/ia/figura6.png  used on input line 173.
 
 \openout4 = `tcc-ifbaiano.mw'.
 
-<images/ia/rnc.png, id=514, 578.91281pt x 184.43906pt>
+<images/ia/rnc.png, id=516, 578.91281pt x 184.43906pt>
 File: images/ia/rnc.png Graphic file (type png)
 <use images/ia/rnc.png>
 Package pdftex.def Info: images/ia/rnc.png  used on input line 203.
@@ -2590,7 +2590,7 @@ Package pdftex.def Info: images/ia/rnc.png  used on input line 203.
 (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
-<images/ia/segmenta.png, id=536, 594.22pt x 468.75125pt>
+<images/ia/segmenta.png, id=538, 594.22pt x 468.75125pt>
 File: images/ia/segmenta.png Graphic file (type png)
 <use images/ia/segmenta.png>
 Package pdftex.def Info: images/ia/segmenta.png  used on input line 230.
@@ -2605,92 +2605,113 @@ Package pdftex.def Info: images/ia/segmenta.png  used on input line 230.
  [29 <./images/ia/segmenta.png>] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
-)
+<images/ia/formula.png, id=567, 605.26125pt x 441.65pt>
+File: images/ia/formula.png Graphic file (type png)
+<use images/ia/formula.png>
+Package pdftex.def Info: images/ia/formula.png  used on input line 269.
+(pdftex.def)             Requested size: 364.00139pt x 265.60529pt.
 \openout4 = `tcc-ifbaiano.mw'.
 
  [30] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
+)
+\openout4 = `tcc-ifbaiano.mw'.
 
-(./tex/metodologia.tex
-<images/ia/processo6.png, id=570, 1445.4pt x 813.0375pt>
+ [31 <./images/ia/formula.png>] (./tcc-ifbaiano.mw)
+\openout4 = `tcc-ifbaiano.mw'.
+
+ (./tex/metodologia.tex
+<images/ia/processo6.png, id=587, 1445.4pt x 813.0375pt>
 File: images/ia/processo6.png Graphic file (type png)
 <use images/ia/processo6.png>
 Package pdftex.def Info: images/ia/processo6.png  used on input line 13.
 (pdftex.def)             Requested size: 409.49722pt x 230.34103pt.
 \openout4 = `tcc-ifbaiano.mw'.
 
- [31
+ [32
 
- <./images/ia/processo6.png (PNG copy)>]
-(./tcc-ifbaiano.mw)
+ <./images/ia/processo6.png (PNG copy)>] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
-<images/ferramentas/lupa.png, id=579, 383.93437pt x 467.49657pt>
+<images/ferramentas/lupa.png, id=595, 383.93437pt x 467.49657pt>
 File: images/ferramentas/lupa.png Graphic file (type png)
 <use images/ferramentas/lupa.png>
 Package pdftex.def Info: images/ferramentas/lupa.png  used on input line 27.
 (pdftex.def)             Requested size: 364.00139pt x 443.25607pt.
 \openout4 = `tcc-ifbaiano.mw'.
 
- [32 <./images/ferramentas/lupa.png>] (./tcc-ifbaiano.mw)
+ [33 <./images/ferramentas/lupa.png>] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
 \openout4 = `tcc-ifbaiano.mw'.
 
-
-[33] (./tcc-ifbaiano.mw)
+ [34] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
-<images/ia/arquitetura2.png, id=619, 1027.84pt x 1027.84pt>
+<images/ia/arquitetura2.png, id=635, 1027.84pt x 1027.84pt>
 File: images/ia/arquitetura2.png Graphic file (type png)
 <use images/ia/arquitetura2.png>
 Package pdftex.def Info: images/ia/arquitetura2.png  used on input line 63.
 (pdftex.def)             Requested size: 364.00139pt x 363.99963pt.
 \openout4 = `tcc-ifbaiano.mw'.
 
- [34 <./images/ia/arquitetura2.png>] (./tcc-ifbaiano.mw)
+ [35 <./images/ia/arquitetura2.png>] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
-<images/ia/saida2.png, id=627, 1445.4pt x 813.0375pt>
+<images/ia/saida2.png, id=643, 1445.4pt x 813.0375pt>
 File: images/ia/saida2.png Graphic file (type png)
 <use images/ia/saida2.png>
-Package pdftex.def Info: images/ia/saida2.png  used on input line 89.
+Package pdftex.def Info: images/ia/saida2.png  used on input line 93.
 (pdftex.def)             Requested size: 364.00139pt x 204.74759pt.
 \openout4 = `tcc-ifbaiano.mw'.
 
- [35 <./images/ia/saida2.png (PNG copy)>] (./tcc-ifbaiano.mw)
+ [36 <./images/ia/saida2.png (PNG copy)>]
+(./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
-<images/ia/arquitetura6.png, id=633, 1445.4pt x 813.0375pt>
-File: images/ia/arquitetura6.png Graphic file (type png)
-<use images/ia/arquitetura6.png>
-Package pdftex.def Info: images/ia/arquitetura6.png  used on input line 109.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 106.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 106.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 106.
+<images/ia/procedi2.png, id=652, 1445.4pt x 813.0375pt>
+File: images/ia/procedi2.png Graphic file (type png)
+<use images/ia/procedi2.png>
+Package pdftex.def Info: images/ia/procedi2.png  used on input line 115.
 (pdftex.def)             Requested size: 364.00139pt x 204.74759pt.
 \openout4 = `tcc-ifbaiano.mw'.
 
- [36 <./images/ia/arquitetura6.png (PNG copy)>] (./tcc-ifbaiano.mw)
+ [37 <./images/ia/procedi2.png (PNG copy)>]
+(./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
-<images/ia/visualizacao.png, id=640, 1445.4pt x 813.0375pt>
+<images/ia/visualizacao.png, id=659, 1445.4pt x 813.0375pt>
 File: images/ia/visualizacao.png Graphic file (type png)
 <use images/ia/visualizacao.png>
-Package pdftex.def Info: images/ia/visualizacao.png  used on input line 131.
+Package pdftex.def Info: images/ia/visualizacao.png  used on input line 137.
 (pdftex.def)             Requested size: 364.00139pt x 204.74759pt.
 \openout4 = `tcc-ifbaiano.mw'.
 
- [37 <./images/ia/visualizacao.png (PNG copy)>] (./tcc-ifbaiano.mw)
+ [38 <./images/ia/visualizacao.png (PNG copy)>]
+(./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
-<images/ia/modeloFinal.png, id=646, 1445.4pt x 813.0375pt>
+<images/ia/modeloFinal.png, id=665, 1445.4pt x 813.0375pt>
 File: images/ia/modeloFinal.png Graphic file (type png)
 <use images/ia/modeloFinal.png>
-Package pdftex.def Info: images/ia/modeloFinal.png  used on input line 147.
+Package pdftex.def Info: images/ia/modeloFinal.png  used on input line 168.
 (pdftex.def)             Requested size: 364.00139pt x 204.74759pt.
+\openout4 = `tcc-ifbaiano.mw'.
+
+ [39] (./tcc-ifbaiano.mw)
+\openout4 = `tcc-ifbaiano.mw'.
+
 )
 \openout4 = `tcc-ifbaiano.mw'.
 
- [38 <./images/ia/modeloFinal.png (PNG copy)>] (./tcc-ifbaiano.mw)
+ [40 <./images/ia/modeloFinal.png (PNG copy)>] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
  (./tex/resultados-discussao.tex
@@ -2699,43 +2720,33 @@ Underfull \hbox (badness 1057) in paragraph at lines 39--39
 t/10 :\OT1/ztmcm/m/n/10 50$ \T1/ptm/m/n/10 (+20) a
  []
 
-<images/ia/formula.png, id=653, 605.26125pt x 441.65pt>
-File: images/ia/formula.png Graphic file (type png)
-<use images/ia/formula.png>
-Package pdftex.def Info: images/ia/formula.png  used on input line 51.
-(pdftex.def)             Requested size: 364.00139pt x 265.60529pt.
 \openout4 = `tcc-ifbaiano.mw'.
 
-[39
+[41
 
 ] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
-\openout4 = `tcc-ifbaiano.mw'.
 
- [40 <./images/ia/formula.png>] (./tcc-ifbaiano.mw)
-\openout4 = `tcc-ifbaiano.mw'.
-
-
-Underfull \hbox (badness 1057) in paragraph at lines 111--111
+Underfull \hbox (badness 1057) in paragraph at lines 101--101
 []|\T1/ptm/m/n/10 (+20) AP Prin-ci-pal ($[] \OT1/ztmcm/m/n/10 = 0\OML/ztmcm/m/i
 t/10 :\OT1/ztmcm/m/n/10 50$ \T1/ptm/m/n/10 (+20) a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--111
+Underfull \hbox (badness 10000) in paragraph at lines 101--101
 []|\T1/ptm/m/n/10 (+20) AP para ob-je-tos gran-des
  []
 
 \openout4 = `tcc-ifbaiano.mw'.
 
-[41] (./tcc-ifbaiano.mw)
+[42] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
 )
 \openout4 = `tcc-ifbaiano.mw'.
 
- [42] (./tcc-ifbaiano.mw)
+ [43] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
  (./tex/conclusao.tex)
@@ -2745,7 +2756,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--111
 
 \openout4 = `tcc-ifbaiano.mw'.
 
- [43
+ [44
 
 ] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
@@ -2754,19 +2765,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--111
 bibitemlist
 \openout4 = `tcc-ifbaiano.mw'.
 
-[44
+[45
 
 ] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
 \openout4 = `tcc-ifbaiano.mw'.
 
- [45] (./tcc-ifbaiano.mw)
-\openout4 = `tcc-ifbaiano.mw'.
-
-\openout4 = `tcc-ifbaiano.mw'.
-
  [46] (./tcc-ifbaiano.mw)
+\openout4 = `tcc-ifbaiano.mw'.
+
+\openout4 = `tcc-ifbaiano.mw'.
+
+ [47] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
 )
@@ -2775,7 +2786,7 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
-<packages/contra-capa.pdf, id=799, 599.51535pt x 847.05435pt>
+<packages/contra-capa.pdf, id=817, 599.51535pt x 847.05435pt>
 File: packages/contra-capa.pdf Graphic file (type pdf)
 <use packages/contra-capa.pdf>
 Package pdftex.def Info: packages/contra-capa.pdf  used on input line 254.
@@ -2784,7 +2795,7 @@ File: packages/contra-capa.pdf Graphic file (type pdf)
 <use packages/contra-capa.pdf>
 Package pdftex.def Info: packages/contra-capa.pdf  used on input line 254.
 (pdftex.def)             Requested size: 599.51389pt x 847.05228pt.
-<packages/contra-capa.pdf, id=802, page=1, 599.51535pt x 847.05435pt>
+<packages/contra-capa.pdf, id=820, page=1, 599.51535pt x 847.05435pt>
 File: packages/contra-capa.pdf Graphic file (type pdf)
 <use packages/contra-capa.pdf, page 1>
 Package pdftex.def Info: packages/contra-capa.pdf , page1 used on input line 25
@@ -2797,7 +2808,7 @@ Package pdftex.def Info: packages/contra-capa.pdf , page1 used on input line 25
 (pdftex.def)             Requested size: 598.01363pt x 844.93257pt.
 \openout4 = `tcc-ifbaiano.mw'.
 
-[47] (./tcc-ifbaiano.mw)
+[48] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
 
 File: packages/contra-capa.pdf Graphic file (type pdf)
@@ -2817,7 +2828,7 @@ Package pdftex.def Info: packages/contra-capa.pdf , page1 used on input line 25
 (pdftex.def)             Requested size: 598.01363pt x 844.93257pt.
 \openout4 = `tcc-ifbaiano.mw'.
 
- [48
+ [49
 
  <./packages/contra-capa.pdf>] (./tcc-ifbaiano.mw)
 \openout4 = `tcc-ifbaiano.mw'.
@@ -3571,6 +3582,26 @@ enddocument/afterlastpage: lastpage setting LastPage.
 
 \openout4 = `tcc-ifbaiano.mw'.
 
+\openout4 = `tcc-ifbaiano.mw'.
+
+\openout4 = `tcc-ifbaiano.mw'.
+
+\openout4 = `tcc-ifbaiano.mw'.
+
+\openout4 = `tcc-ifbaiano.mw'.
+
+\openout4 = `tcc-ifbaiano.mw'.
+
+\openout4 = `tcc-ifbaiano.mw'.
+
+\openout4 = `tcc-ifbaiano.mw'.
+
+\openout4 = `tcc-ifbaiano.mw'.
+
+\openout4 = `tcc-ifbaiano.mw'.
+
+\openout4 = `tcc-ifbaiano.mw'.
+
 )
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -3579,7 +3610,7 @@ L3 programming layer <2020/03/25>
 \openout4 = `tcc-ifbaiano.brf'.
 
 Package rerunfilecheck Info: File `tcc-ifbaiano.brf' has not changed.
-(rerunfilecheck)             Checksum: 123DF63F64D01AAC70FCAD7F7D6275B1;4671.
+(rerunfilecheck)             Checksum: 55D0A630FD3DC1F518CB6D5002E494B3;4906.
 \openout4 = `tcc-ifbaiano.nlo'.
 
 \openout4 = `tcc-ifbaiano.glo'.
@@ -3594,11 +3625,11 @@ Package rerunfilecheck Info: File `tcc-ifbaiano.brf' has not changed.
 
  ) 
 Here is how much of TeX's memory you used:
- 54146 strings out of 474222
- 1007124 string characters out of 5748732
- 1942975 words of memory out of 5000000
- 73721 multiletter control sequences out of 15000+600000
- 710764 words of font info for 472 fonts, out of 8000000 for 9000
+ 54268 strings out of 474222
+ 1008861 string characters out of 5748732
+ 1943975 words of memory out of 5000000
+ 73769 multiletter control sequences out of 15000+600000
+ 722598 words of font info for 509 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  125i,17n,121p,3223b,873s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
@@ -3613,10 +3644,10 @@ e/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on tcc-ifbaiano.pdf (49 pages, 6070810 bytes).
+Output written on tcc-ifbaiano.pdf (50 pages, 6048598 bytes).
 PDF statistics:
- 1085 PDF objects out of 1200 (max. 8388607)
- 926 compressed objects within 10 object streams
- 176 named destinations out of 1000 (max. 500000)
- 117262 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 1106 PDF objects out of 1200 (max. 8388607)
+ 946 compressed objects within 10 object streams
+ 180 named destinations out of 1000 (max. 500000)
+ 134678 words of extra memory for PDF output out of 154059 (max. 10000000)
 

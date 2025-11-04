@@ -19,11 +19,11 @@
 \contentsline {figure}{\numberline {6}{\ignorespaces Rede Neural Simples e Rede Neural Profunda}}{26}{figure.caption.16}%
 \contentsline {figure}{\numberline {7}{\ignorespaces Arquitetura da LeNet-5, uma Rede Neural Convolucional}}{28}{figure.caption.17}%
 \contentsline {figure}{\numberline {8}{\ignorespaces Etapas da Segmentação de Instância}}{29}{figure.caption.18}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Esquema de funcionamento do modelo proposto}}{31}{figure.caption.19}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Demonstração das componentes de um Microscópio Estereoscópio}}{32}{figure.caption.20}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Arquitetura do Modelo de Aprendizado de Máquina para Identificação de Oócitos}}{34}{figure.caption.21}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Imagem de Entrada e Saída no Modelo de Identificação de Oócitos}}{35}{figure.caption.22}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Arquitetura do Modelo de Aprendizado de Máquina para Classificação de Oócitos}}{36}{figure.caption.23}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Demonstração da classificação de um oócito bovino}}{37}{figure.caption.24}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Demonstração do funcionamento do Modelo Final}}{38}{figure.caption.25}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Fórmula d IoU}}{40}{figure.caption.27}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Fórmula do IoU}}{31}{figure.caption.19}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Esquema de funcionamento do modelo proposto}}{32}{figure.caption.20}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Demonstração das componentes de um Microscópio Estereoscópio}}{33}{figure.caption.21}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Arquitetura do Modelo de Aprendizado de Máquina para Identificação de Oócitos}}{35}{figure.caption.22}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Imagem de Entrada e Saída no Modelo de Identificação de Oócitos}}{36}{figure.caption.23}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Arquitetura do Modelo de Aprendizado de Máquina para Classificação de Oócitos}}{37}{figure.caption.24}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Demonstração da classificação de um oócito bovino}}{38}{figure.caption.25}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Demonstração do funcionamento do Modelo Final}}{40}{figure.caption.26}%
